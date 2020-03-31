@@ -7,7 +7,7 @@ def student(request):
 
 
 def info(request):
-    return render(request, 'uprile.html')
+    pass
 
 
 def grade(request):

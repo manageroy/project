@@ -2,22 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e695860-e8a4-41d2-bd12-96accf80c108" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/stu_app/url/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stu_app/url/add_url.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stu_app/url/change_url.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stu_app/url/data_url.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stu_app/url/manage_url.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stu_app/views/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stu_app/views/add.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stu_app/views/change.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stu_app/views/data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stu_app/views/manage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stu_app/data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stu_app/dispose_from.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/templates/uprile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/url/add_url.py" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/url/add_url.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/url/change_url.py" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/url/change_url.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/url/data_url.py" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/url/data_url.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/url/manage_url.py" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/url/manage_url.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stu_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stu_app/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stu_management/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/stu_management/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/views/add.py" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/views/add.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_management/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/stu_management/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +25,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -117,7 +112,7 @@
       <updated>1585528376227</updated>
       <workItem from="1585528378274" duration="2481000" />
       <workItem from="1585535514157" duration="3135000" />
-      <workItem from="1585617752848" duration="5578000" />
+      <workItem from="1585617752848" duration="8676000" />
     </task>
     <servers />
   </component>
@@ -125,13 +120,21 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585622635714">
+    <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585624859194">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1585622635714" />
+    <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1585624859194" />
+    <state x="283" y="0" key="CommitChangelistDialog2" timestamp="1585626746046">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="283" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1585626746046" />
     <state x="184" y="26" key="SettingsEditor" timestamp="1585536855392">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="26" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1585536855392" />
+    <state x="475" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585626732054">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="475" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1585626732054" />
   </component>
 </project>
