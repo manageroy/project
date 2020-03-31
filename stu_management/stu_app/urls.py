@@ -1,9 +1,10 @@
 from django.contrib import admin
-from django.urls import path
-from . import views
-from . import dispose_from
-from . import data
+from django.urls import path, include
+
 
 urlpatterns = [
-    path('/index', views.index)
+    path('/data', include('stu_app.url.data_url')),
+    path('/add', include('stu_app.url.add_url')),
+    path('/change', include('stu_app.url.change_url')),
+    path('/manage', include('stu_app.url.manage_url')),
 ]

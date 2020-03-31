@@ -2,14 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e695860-e8a4-41d2-bd12-96accf80c108" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stu_app/data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stu_app/dispose_from.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/stu_management.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/stu_management.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stu_app/url/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stu_app/url/add_url.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stu_app/url/change_url.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stu_app/url/data_url.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stu_app/url/manage_url.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stu_app/views/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stu_app/views/add.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stu_app/views/change.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stu_app/views/data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stu_app/views/manage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/dispose_from.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/stu_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stu_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_management/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/stu_management/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,12 +53,20 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\project\stu_management\stu_app\dispose_from" />
+      <recent name="D:\project\stu_management\stu_app\urls" />
+      <recent name="D:\project\stu_management\stu_app" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="stu_management" type="Python.DjangoServer" factoryName="Django server">
@@ -101,7 +117,7 @@
       <updated>1585528376227</updated>
       <workItem from="1585528378274" duration="2481000" />
       <workItem from="1585535514157" duration="3135000" />
-      <workItem from="1585617752848" duration="890000" />
+      <workItem from="1585617752848" duration="5578000" />
     </task>
     <servers />
   </component>
@@ -109,10 +125,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585618914007">
+    <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585622635714">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1585618914007" />
+    <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1585622635714" />
     <state x="184" y="26" key="SettingsEditor" timestamp="1585536855392">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
