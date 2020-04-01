@@ -8,10 +8,12 @@
         * {
             box-sizing: border-box;
         }
+
         body {
             margin: 0;
             padding: 0;
             font: 16px/20px microsft yahei;
+
          }
         .wrap {
             width: 100%;
@@ -39,7 +41,7 @@
             outline: 0;
             padding: 6px 10px;
             line-height: 24px;
-            margin: 32px auto;
+            margin: 25px auto;
             -webkit-transition: all 0s ease-in 0.1ms;
             -moz-transition: all 0s ease-in 0.1ms;
             transition: all 0s ease-in 0.1ms;
@@ -212,18 +214,41 @@
     </style>
 </head>
 <body>
-    <div class="wrap">
+    <div class="wrap" style="overflow-y:scroll;">
     <div class="container">
-        <h1 style="color:white; margin: 0; text-align: center">Add student</h1>
-        <form>
-        <label><input type="text" placeholder="姓名"/></label>
-        <label><input type="text" placeholder="性别"/></label>
-        <label><input type="text" placeholder="班级" /></label>
-        <label><input type="text" placeholder="专业" /></label>
-                <label><input type="text" placeholder="班主任" /></label>
-        <label><input type="text" placeholder="任课老师" /></label>
+       <form action="">
+                   <h1 style="color:white; margin: 0; text-align: center">Update message</h1>
+           <label><input type="text" placeholder="姓名" autocomplete="off" required/></label>
+        <label><input type="text" placeholder="性别" autocomplete="off" required/></label>
+        <label><input type="text" placeholder="班级" autocomplete="off" required/></label>
+        <label><input type="text" placeholder="专业" autocomplete="off" required /></label>
+           <label><input type="text" placeholder="班主任" autocomplete="off" required/></label>
+        <label><input type="text" placeholder="任课老师" autocomplete="off" required/></label>
+        <label><input type="text" placeholder="身份证号" name="name" required autocomplete="off"/></label>
+        <label><input type="text" placeholder="年龄" name="sex" required autocomplete="off"/></label>
+        <label><input type="text" placeholder="籍贯" name="grade" required autocomplete="off"/></label>
+        <label><input type="text" placeholder="入学时间" name="profession" required autocomplete="off"/></label>
+                <label><input type="text" placeholder="招生老师" required name="teacher_name" autocomplete="off"/></label>
+        <label><input type="text" placeholder="手机号" required name="teach_name" autocomplete="off"/></label>
+                <label><input type="text" placeholder="家长姓名" required name="teach_name" autocomplete="off"/></label>
+        <label><input type="text" placeholder="家长联系方式" required name="teach_name" autocomplete="off"/></label>
+        <label><input type="text" placeholder="学费" name="teach_name" required autocomplete="off"/></label>
+        <label><input type="text" placeholder="是否贷款" name="teach_name" required autocomplete="off"/></label>
+        <label><input type="text" placeholder="学分" name="teach_name" required autocomplete="off"/></label>
           <label><input type="submit" value="提交"/></label>
         </form>
     </div>
+        <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
 </div>
 </body>
