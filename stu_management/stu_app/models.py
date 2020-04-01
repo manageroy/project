@@ -56,6 +56,7 @@ class Change_class(models.Model):
     before_class_name = models.CharField(max_length=6)
     teacher_evaluate = models.TextField(default=' ')
     change_class_num = models.IntegerField()
+    change_class_reason=models.TextField(default='考试不合格')
     status = models.CharField(default='0', max_length=2)
 
 
