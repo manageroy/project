@@ -3,7 +3,11 @@ from django.http import request
 
 
 def student(request):
-    pass
+    if request.method == 'GET':
+        return render(request, 'add_student.html')
+    res = request.POST['name']
+    print(res)
+    return HttpResponse('ll')
 
 
 def info(request):
