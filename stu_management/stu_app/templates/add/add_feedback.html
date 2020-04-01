@@ -28,7 +28,7 @@
         }
         .container h1 {
             text-align: center;
-            color: #FFFFFF;
+            color: black;
             font-weight: 500;
         }
         .container input {
@@ -44,10 +44,11 @@
             -moz-transition: all 0s ease-in 0.1ms;
             transition: all 0s ease-in 0.1ms;
         }
-        .container input[type="text"] , .container input[type="password"]  {
-            background-color: #FFFFFF;
+        .container input[type="textarea"]  {
+            background-color: black;
             font-size: 16px;
-            color: #50a3a2;
+            color: black;
+            resize: none;
         }
         .container input[type='submit'] {
             font-size: 16px;
@@ -56,8 +57,10 @@
             background-color: #FFFFFF;
         }
 
-        .container input:focus {
-            width: 400px;
+        #inp :hover {
+            cursor: pointer;
+            color: darkseagreen;
+
         }
         .container input[type='submit']:hover {
             cursor: pointer;
@@ -67,8 +70,10 @@
         .to_login{
             color: #a7c4c9;
         }
-        .text{
-            color: #e2dfe4;
+        #inp{
+            color: black;
+            font-size: 10px;
+            margin-left: 120px;
         }
         .wrap ul {
             position: absolute;
@@ -212,16 +217,12 @@
     </style>
 </head>
 <body>
-    <div class="wrap">
+    <div class="wrap"  style="overflow-y:scroll;">
     <div class="container">
-        <h1 style="color:white; margin: 0; text-align: center">Add student</h1>
+        <h1 style="color:white; margin: 74px; font-size:50px;text-align: center">Add feedback</h1>
         <form>
-        <label><input type="text" placeholder="姓名" autocomplete="off"/></label>
-        <label><input type="text" placeholder="性别" autocomplete="off"/></label>
-        <label><input type="text" placeholder="班级" autocomplete="off"/></label>
-        <label><input type="text" placeholder="专业" autocomplete="off"/></label>
-                <label><input type="text" placeholder="班主任" autocomplete="off"/></label>
-        <label><input type="text" placeholder="任课老师" autocomplete="off"/></label>
+        <label><textarea id="inp" name="suggestion" placeholder="请输入要提交的建议" required spellcheck="true" rows="15" cols="80"></textarea>
+</label>
           <label><input type="submit" value="提交"/></label>
         </form>
     </div>
