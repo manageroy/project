@@ -3,13 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="1e695860-e8a4-41d2-bd12-96accf80c108" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stu_app/templates/add_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/add_info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stu_app/templates/add_student.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/add_student.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stu_app/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/templates/add/add_change_class.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/add/add_change_class.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/templates/add/add_dropout.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/add/add_dropout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/templates/add/add_expression.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/add/add_expression.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/templates/add/add_feedback.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/add/add_feedback.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/templates/add/add_grade.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/add/add_grade.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/templates/add/add_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/add/add_info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/templates/add/add_student.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/add/add_student.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stu_app/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stu_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/templates/update/change_pwd.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/update/change_pwd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stu_app/views/add.py" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/views/add.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stu_management/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/stu_management/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +67,29 @@
       <recent name="D:\project\stu_management\stu_app" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.tests">
+    <configuration name="tests" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="stu_management" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/stu_app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/stu_app/tests.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="stu_management" type="Python.DjangoServer" factoryName="Django server">
       <module name="stu_management" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -85,6 +113,11 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.tests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -110,7 +143,7 @@
       <updated>1585528376227</updated>
       <workItem from="1585528378274" duration="2481000" />
       <workItem from="1585535514157" duration="3135000" />
-      <workItem from="1585617752848" duration="13700000" />
+      <workItem from="1585617752848" duration="25343000" />
     </task>
     <servers />
   </component>
@@ -126,6 +159,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="283" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1585626746046" />
+    <state width="1323" height="377" key="GridCell.Tab.0.bottom" timestamp="1585728274949">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="377" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1585728274949" />
+    <state width="1323" height="377" key="GridCell.Tab.0.center" timestamp="1585728274949">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="377" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1585728274949" />
+    <state width="1323" height="377" key="GridCell.Tab.0.left" timestamp="1585728274949">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="377" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1585728274949" />
+    <state width="1323" height="377" key="GridCell.Tab.0.right" timestamp="1585728274949">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="377" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1585728274949" />
     <state x="184" y="26" key="SettingsEditor" timestamp="1585536855392">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -134,5 +183,8 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="475" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1585626732054" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/stu_management$tests.coverage" NAME="tests Coverage Results" MODIFIED="1585728272313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stu_app" />
   </component>
 </project>
