@@ -4,6 +4,7 @@ from stu_app import models
 import json
 
 
+<<<<<<< HEAD
 def pwd(request):
     if request.method == 'GET':
         return render(request, 'update/change_pwd.html')
@@ -16,6 +17,20 @@ def pwd(request):
     res.save()
     return HttpResponse('ok')
 
+=======
+def pwd(request,name):
+    if request.method=='GET':
+        return render(request,'../templates/update/change_pwd.html')
+    else:
+        password1=request.POST.get('pwd1')
+        password2=request.POST.get('pwd3')
+        stu=models.Student.objects.get(name=name,password=password1)
+        if stu:
+            obj=models.Student.objects.get(name=name)
+            obj.password=password2
+            obj.save()
+            return HttpResponseRedirect('/v1.0/login')
+>>>>>>> 4f4280ff43bc75bc09601a1cc72b58d2950fe711
 
 def info(request):
     stu = models.Stu_msg.objects.get(stu_num=1)
