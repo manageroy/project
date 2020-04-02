@@ -2,40 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Student</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <style type="text/css">
         * {
             box-sizing: border-box;
         }
-
         body {
             margin: 0;
             padding: 0;
-            font: 16px/20px microsft yahei;
-            overflow-y: scroll;
-        }
+             font: 16px/20px microsft yahei;
 
+         }
         .wrap {
             width: 100%;
             height: 100%;
             padding: 10% 0;
             position: fixed;
             opacity: 0.8;
-            background: linear-gradient(to bottom right, skyblue, #656565);
-            background: -webkit-linear-gradient(to bottom right, #50a3a2, #53e3a6);
+            background: linear-gradient(to bottom right,skyblue, #656565);
+            background: -webkit-linear-gradient(to bottom right,#50a3a2,#53e3a6);
         }
-
-        .container {
-            width: 60%;
-            margin: 0 auto;
-        }
-
         .container h1 {
             text-align: center;
             color: #FFFFFF;
             font-weight: 500;
         }
-
         .container input {
             width: 320px;
             display: block;
@@ -49,36 +45,24 @@
             -moz-transition: all 0s ease-in 0.1ms;
             transition: all 0s ease-in 0.1ms;
         }
-
-        .container input[type="text"], .container input[type="password"] {
+        .container input[type="text"] , .container input[type="password"]  {
             background-color: #FFFFFF;
             font-size: 16px;
             color: #50a3a2;
         }
-
         .container input[type='submit'] {
             font-size: 16px;
             letter-spacing: 2px;
             color: #666666;
             background-color: #FFFFFF;
         }
-
         .container input:focus {
             width: 400px;
         }
-
         .container input[type='submit']:hover {
             cursor: pointer;
             color: #a7c4c9;
             width: 400px;
-        }
-
-        .to_login {
-            color: #a7c4c9;
-        }
-
-        .text {
-            color: #e2dfe4;
         }
 
         .wrap ul {
@@ -89,7 +73,6 @@
             height: 100%;
             z-index: -20;
         }
-
         .wrap ul li {
             list-style-type: none;
             display: block;
@@ -99,11 +82,10 @@
             height: 15px;
             z-index: -8;
             border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.15);
+            background-color:rgba(255, 255, 255, 0.15);
             animotion: square 25s infinite;
             -webkit-animation: square 25s infinite;
         }
-
         .wrap ul li:nth-child(1) {
             left: 0;
             animation-duration: 10s;
@@ -111,7 +93,6 @@
             -o-animation-duration: 10s;
             -webkit-animation-duration: 10s;
         }
-
         .wrap ul li:nth-child(2) {
             width: 40px;
             height: 40px;
@@ -121,7 +102,6 @@
             -o-animation-duration: 15s;
             -webkit-animation-duration: 11s;
         }
-
         .wrap ul li:nth-child(3) {
             left: 20%;
             width: 25px;
@@ -131,7 +111,6 @@
             -o-animation-duration: 12s;
             -webkit-animation-duration: 12s;
         }
-
         .wrap ul li:nth-child(4) {
             width: 50px;
             height: 50px;
@@ -145,7 +124,6 @@
             -o-animation-duration: 12s;
             -webkit-animation-duration: 12s;
         }
-
         .wrap ul li:nth-child(5) {
             width: 60px;
             height: 60px;
@@ -155,7 +133,6 @@
             -o-animation-duration: 10s;
             -webkit-animation-duration: 10s;
         }
-
         .wrap ul li:nth-child(6) {
             width: 75px;
             height: 75px;
@@ -165,7 +142,6 @@
             -o-animation-delay: 7s;
             animation-delay: 7s;
         }
-
         .wrap ul li:nth-child(7) {
             left: 60%;
             width: 30px;
@@ -175,7 +151,6 @@
             -o-animation-duration: 8s;
             -webkit-animation-duration: 8s;
         }
-
         .wrap ul li:nth-child(8) {
             width: 90px;
             height: 90px;
@@ -185,7 +160,6 @@
             -o-animation-delay: 4s;
             animation-delay: 4s;
         }
-
         .wrap ul li:nth-child(9) {
             width: 50px;
             height: 50px;
@@ -195,7 +169,6 @@
             -o-animation-duration: 20s;
             -webkit-animation-duration: 20s;
         }
-
         .wrap ul li:nth-child(10) {
             width: 75px;
             height: 75px;
@@ -209,7 +182,6 @@
             -o-animation-duration: 30s;
             -webkit-animation-duration: 30s;
         }
-
         @keyframes square {
             0% {
                 -webkit-transform: translateY(0);
@@ -221,7 +193,6 @@
                 transform: translateY(-500)
             }
         }
-
         @-webkit-keyframes square {
             0% {
                 -webkit-transform: translateY(0);
@@ -233,63 +204,202 @@
                 transform: translateY(-500)
             }
         }
-        #tishi{
+        .left_div{
+            margin-top: -137px;
             position: fixed;
-            top: 364px;
-            left: 1073px;
+            top: 136px;
+            width: 191px;
+            height: 100px;
+            background-color: black;
+        }
+        .left_div2{
+            position: fixed;
+            top: 129px;
+            margin-top: -33px;
+            background-color: black;
+            width: 191px;
+            height: 1500px;
+        }
+        h1{
+            color: #ffffff;
+            padding-top:15px;
+            text-align: center;
+        }
+        h3{
+           color: #ffffff;
+            padding-top:28px;
+            text-align: center;
+        }
+        h3 .a_name{
+            color: white;
+            text-decoration:none;
+        }
+        h3 .a_name:hover{
+            color: paleturquoise;
+        }
+        div.search {
+            position: fixed;
+            top: 103px;
+            left: -35px;
+            padding:14px 53px;
+            width: 400px;
+            margin-top: -90px;
+            margin-left: 201px;
+            background-color: transparent;
+    }
+
+form {
+    position:relative;
+    width:300px;
+    margin:0 auto;
+}
+
+input,button {
+    border:none;
+    outline:none;
+}
+
+input {
+    width:100%;
+    height:42px;
+    color: black;
+    padding-left:13px;
+}
+button {
+    height:42px;
+    width:42px;
+    cursor:pointer;
+    position:absolute;
+}
+.bar input {
+    border:2px solid #c5464a;
+    border-radius:5px;
+    background:transparent;
+    top:0;
+    right:0;
+}
+.bar button {
+    background:#c5464a;
+    border-radius:0 5px 5px 0;
+    width:60px;
+    top:0;
+    right:0;
+}
+.bar button:before {
+    content:"搜索";
+    font-size:13px;
+    color:#F9F0DA;
+}
+        .logout{
+            position: fixed;
+            top: 38px;
+            right: 103px;
+
+        }
+        .logout a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .logout a:hover{
+            color: #d16b6e;
+             cursor:pointer;        }
+        .tab{
+            width: 1133px;
+            position: fixed;
+            left: 219px;
+            top: 194px;
+        }
+        .table_in{
+            font-size: 20px;
+        }
+        .td_a{
+            color: white;
+        }
+        .td_a:hover{
+            color: #d16b6e;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .h2_class{
+
+            position: fixed;
+            top: 128px;
+            left: 218px;
+            font-weight: bold;
+        }
+        .tr_look:hover{
+            background-color: lightskyblue;
+        }
+        .h4_name{
+            position: fixed;
+            top: 29px;
+            right: 261px;
+            color: white;
         }
     </style>
 </head>
 <body>
-<div class="wrap" style="overflow-y:scroll;">
-    <div class="container">
-        <h1 style="color:white; margin: 0; text-align: center">Update password</h1>
-        <form>
-            <label><input type="text" name="pwd1" placeholder="原密码" autocomplete="off" required/></label>
-            <label><input type="text" name="pwd2" id="pwd1" placeholder="更改密码" autocomplete="off" required/><span id="tishi"></span></label>
-            <label><input type="text" name='pwd3' id="pwd2"placeholder="确认密码" autocomplete="off" required onkeyup="validate()"/></label>
-            <label><input type="submit" value="提交"/></label>
-        </form>
-    </div>
-    <ul>
-               
-        <li></li>
-               
-        <li></li>
-               
-        <li></li>
-               
-        <li></li>
-               
-        <li></li>
-               
-        <li></li>
-               
-        <li></li>
-               
-        <li></li>
-               
-        <li></li>
-               
-        <li></li>
-           
-    </ul>
+    <div class="wrap" style="overflow-y:scroll;">
+        <div class="left_div">
+            <h1>学生管理</h1>
+        </div>
+        <div class="search bar">
+    <form >
+        <input placeholder="搜索" name="cname" type="text" autocomplete="off">
+        <button type="submit"></button>
+    </form>
 </div>
-<script type="text/javascript">
-      function validate() {
-              var pwd1 = document.getElementById("pwd1").value;
-              var pwd2 = document.getElementById("pwd2").value;
-		<!-- 对比两次输入的密码 -->
-              if(pwd1 == pwd2) {
-                  document.getElementById("tishi").innerHTML="<font color='green'>两次密码相同</font>";
-                  document.getElementById("submit").disabled = false;
-              }
-              else {
-                 document.getElementById("tishi").innerHTML="<font color='red'>两次密码不相同</font>";
-                document.getElementById("submit").disabled = true;
-              }
-          }
-      </script>
+        <div class="logout">
+            <h4 class="h4_name">欢迎,{{ name }}同学</h4>
+            <a href="#">退出</a>&nbsp;&nbsp;&nbsp;
+            <a>联系我们</a>
+        </div>
+        <h2 class="h2_class">信息</h2>
+        <div class="table_in">
+            <table class="table table-striped tab">
+                <tr>
+    <th>序号</th>
+          <th>姓名</th>
+          <th>性别</th>
+          <th>联系方式</th>
+                    <th>籍贯</th>
+                    <th>学分</th>
+    </tr>
+    <tr class="tr_look">
+        <td>1</td>
+        <td>小明</td>
+        <td>男</td>
+        <td>1234</td>
+        <td>河南</td>
+        <td>100</td>
+    </tr>
+        </table>
+        </div>
+        <div class="left_div2">
+            <h3>
+                <a class="a_name" href="#">成绩记录</a></h3>
+            <h3>
+                <a class="a_name" href="#">在校表现</a></h3>
+            <h3>
+                <a class="a_name" href="#">录入信息</a></h3>
+            <h3>
+                <a class="a_name" href="#">设置密码</a></h3>
+            <h3>
+                <a class="a_name" href="#">提交反馈</a></h3>
+        </div>
+        <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
 
 </body>
-</html>
