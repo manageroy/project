@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e695860-e8a4-41d2-bd12-96accf80c108" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/stu_app/static/js/axios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stu_app/static/js/vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stu_app/images/login.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/static/images/login.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stu_app/images/register.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/static/images/register.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stu_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stu_app/templates/add/add_expression.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/add/add_expression.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stu_app/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stu_app/templates/manage/manage_change_class.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/manage/manage_change_class.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stu_app/templates/manage/manage_dropout.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/manage/manage_dropout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stu_app/templates/manage/manage_expression.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/manage/manage_expression.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stu_app/templates/manage/manage_feedback.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/manage/manage_feedback.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stu_app/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stu_app/templates/update/change_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/update/change_info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stu_app/templates/update/change_pwd.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/update/change_pwd.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stu_app/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stu_app/views/add.py" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/views/add.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stu_app/views/change.py" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/views/change.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stu_app/views/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/views/manage.py" afterDir="false" />
-    </list>
+    <list default="true" id="1e695860-e8a4-41d2-bd12-96accf80c108" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -152,7 +132,7 @@
       <updated>1585528376227</updated>
       <workItem from="1585528378274" duration="2481000" />
       <workItem from="1585535514157" duration="3135000" />
-      <workItem from="1585617752848" duration="41353000" />
+      <workItem from="1585617752848" duration="41673000" />
     </task>
     <servers />
   </component>

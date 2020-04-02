@@ -245,7 +245,6 @@
     <div id="app" class="container">
         <h1 style="color:white; margin: 0; text-align: center">Update password</h1>
         <form>
-<<<<<<< HEAD
             <label><input type="text" placeholder="账号" v-model="account" name="account"></label>
             <label><input type="text" placeholder="原密码" v-model="pwd" name="pwd" autocomplete="off"
                           required/></label>
@@ -255,12 +254,6 @@
                           required/></label>
             <p>{{ error }}</p>
             <label><input type="button" @click="verify" value="提交"/></label>
-=======
-            <label><input type="text" name="pwd1" placeholder="原密码" autocomplete="off" required/></label>
-            <label><input type="text" name="pwd2" id="pwd1" placeholder="更改密码" autocomplete="off" required/><span id="tishi"></span></label>
-            <label><input type="text" name='pwd3' id="pwd2"placeholder="确认密码" autocomplete="off" required onkeyup="validate()"/></label>
-            <label><input type="submit" value="提交"/></label>
->>>>>>> 4f4280ff43bc75bc09601a1cc72b58d2950fe711
         </form>
     </div>
     <ul>
