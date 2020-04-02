@@ -30,7 +30,6 @@ def info(request):
 
     stu_num = request.POST.get('stu_num')
     stu = models.Student.objects.get(stu_num=stu_num)
-    print(stu.stu_num)
     if stu:
         id_num = request.POST.get('id_num')
         age = request.POST.get("age")

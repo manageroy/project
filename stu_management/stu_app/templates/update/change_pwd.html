@@ -237,13 +237,18 @@
 </head>
 <body>
 <div class="wrap" style="overflow-y:scroll;">
-    <div class="container">
+    <div id="app" class="container">
         <h1 style="color:white; margin: 0; text-align: center">Update password</h1>
         <form>
-            <label><input type="text" placeholder="原密码" autocomplete="off" required/></label>
-            <label><input type="text" placeholder="更改密码" autocomplete="off" required/></label>
-            <label><input type="text" placeholder="确认密码" autocomplete="off" required/></label>
-            <label><input type="submit" value="提交"/></label>
+            <label><input type="text" placeholder="账号" v-model="account" name="account"></label>
+            <label><input type="text" placeholder="原密码" v-model="pwd" name="pwd" autocomplete="off"
+                          required/></label>
+            <label><input type="text" placeholder="更改密码" v-model="pwd1" name="pwd1" autocomplete="off"
+                          required/></label>
+            <label><input type="text" placeholder="确认密码" v-model="pwd2" name="pwd2" autocomplete="off"
+                          required/></label>
+            <p>{{ error }}</p>
+            <label><input type="button" @click="verify" value="提交"/></label>
         </form>
     </div>
     <ul>
@@ -270,4 +275,43 @@
            
     </ul>
 </div>
+<script src="../../static/js/axios.js"></script>
+<script src="../../static/js/vue.js"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            account: '',
+            pwd: '',
+            pwd1: '',
+            pwd2: '',
+            error: ''
+        },
+        methods: {
+            verify: function () {
+                if (this.pwd1 === this.pwd2) {
+                    axios.post('http://127.0.0.1:8000/v1.0/change/pwd', {
+                        account: this.account,
+                        pwd: this.pwd,
+                        pwd1: this.pwd1
+                    })
+                        .then(function (response) {
+                            var that = this;
+                            console.log(response);
+                            that.account = '';
+                            that.pwd = '';
+                            that.pwd1 = '';
+                            that.pwd2 = '';
+                        })
+                        .catch(function (error) {
+                            console.log(error);
+                        });
+                } else {
+                    this.error = '两次密码不一样'
+                }
+            }
+        }
+    });
+
+</script>
 </body>

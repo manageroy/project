@@ -214,26 +214,15 @@
     <div class="wrap"  style="overflow-y:scroll;">
     <div class="container">
         <h1 style="color:white; margin: 33px; text-align: center">事情详细记录</h1>
-        <form>
-        <label><input type="text" placeholder="姓名" autocomplete="off"/></label>
-            <label><input type="text" placeholder="班级" autocomplete="off"/></label>
-            <label><input type="text" placeholder="班主任" autocomplete="off"/></label>
-            <label><textarea class="inp"  placeholder="事情原因" spellcheck="true" rows="10" cols="50"></textarea>
-                <label><textarea class="inp"  placeholder="处理结果" spellcheck="true" rows="15" cols="50"></textarea>
-          <label><input type="submit" value="同意"/></label>
+        <p>姓名: {{ res.stu_num.name }}</p>
+        <p>班级: {{ res.stu_num.class_name }}</p>
+        <p>班主任: {{ res.stu_num.teacher_name }}</p>
+        <p>事情原因: {{ res.reason }}</p>
+        <form method="post" action="/v1.0/manage/expression">
+            <label><textarea class="inp" placeholder="处罚或奖励" name="result" spellcheck="true" rows="15" cols="50"></textarea></label>
+            <label><input type="text" name="credit" placeholder="学分变化"></label>
+            <label><input type="submit" value="确认"/></label>
         </form>
     </div>
-        <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
 </div>
 </body>

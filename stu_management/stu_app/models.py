@@ -58,8 +58,8 @@ class Change_class(models.Model):
     class_name = models.CharField(max_length=6)
     before_class = models.CharField(max_length=6)
     teacher_evaluate = models.TextField(default=' ')
-    change_class_num = models.IntegerField()
-    change_class_reason=models.TextField(default='考试不合格')
+    change_class_reason = models.TextField(default='考试不合格')
+    res = models.TextField()
     status = models.CharField(default='0', max_length=2)
     stu_num = models.ForeignKey('Student', to_field='stu_num', related_name='change_class',
                                 on_delete=models.CASCADE)
@@ -71,6 +71,7 @@ class School_expression(models.Model):
     reason = models.TextField()
     punish = models.TextField()
     result = models.CharField(max_length=3)
+    status = models.CharField(default='0', max_length=2)
     stu_num = models.ForeignKey('Student', to_field='stu_num', related_name='school_expression',
                                 on_delete=models.CASCADE)
 
