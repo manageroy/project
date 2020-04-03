@@ -26,11 +26,7 @@
             width: 60%;
             margin: 0 auto;
         }
-        .container h1 {
-            text-align: center;
-            color: #FFFFFF;
-            font-weight: 500;
-        }
+
         .container input {
             width: 320px;
             display: block;
@@ -64,11 +60,7 @@
             color: #a7c4c9;
             width: 400px;
         }
-        .inp{
-            color: black;
-            font-size: 10px;
-            margin-left:190px ;
-        }
+
         .wrap ul {
             position: absolute;
             top: 0;
@@ -208,21 +200,73 @@
                 transform: translateY(-500)
             }
         }
+        .p_in1{
+            position: fixed;
+            top: 163px;
+            left: 525px;
+            font-size: 26px;
+        }
+        .p_in2{
+            position: fixed;
+            top: 231px;
+            left: 525px;
+            font-size: 26px;
+        }
+        .p_in3{
+            position: fixed;
+            top: 313px;
+            left: 525px;
+            font-size: 26px;
+
+        }
+        .p_in4{
+            position: fixed;
+            top: 400px;
+            left: 525px;
+            font-size: 26px;
+
+        }
+        .inp{
+            position: fixed;
+            top: 510px;
+            left: 515px;
+            font-size: 15px;
+        }
+        .container h1{
+            font-size:60px;
+            color: white;
+            font-weight: bold;
+            position: fixed;
+            top: 58px;
+            left: 506px;
+        }
     </style>
 </head>
 <body>
     <div class="wrap"  style="overflow-y:scroll;">
     <div class="container">
-        <h1 style="color:white; margin: 33px; text-align: center">事情详细记录</h1>
-        <p>姓名: {{ res.stu_num.name }}</p>
-        <p>班级: {{ res.stu_num.class_name }}</p>
-        <p>班主任: {{ res.stu_num.teacher_name }}</p>
-        <p>事情原因: {{ res.reason }}</p>
-        <form method="post" action="/v1.0/manage/expression">
-            <label><textarea class="inp" placeholder="处罚或奖励" name="result" spellcheck="true" rows="15" cols="50"></textarea></label>
+        <h1>事情详细记录</h1>
+        <p class="p_in1">姓名: {{ res.stu_num.name }}</p>
+        <p class="p_in2">班级: {{ res.stu_num.class_name }}</p>
+        <p class="p_in3">班主任: {{ res.stu_num.teacher_name }}</p>
+        <p class="p_in4">事情原因: {{ res.reason }}</p>
+        <form method="post" class="inp" action="/v1.0/manage/expression">
+            <label><textarea  placeholder="处罚或奖励" name="result" spellcheck="true" rows="15" cols="50"></textarea></label>
             <label><input type="text" name="credit" placeholder="学分变化"></label>
             <label><input type="submit" value="确认"/></label>
         </form>
     </div>
+        <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
 </div>
 </body>

@@ -1,8 +1,6 @@
 from django.shortcuts import render, HttpResponse
-
 from stu_app import models
 import json
-
 
 
 def pwd(request):
