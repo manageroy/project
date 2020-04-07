@@ -15,17 +15,22 @@ class Administrator(models.Model):
 # 学生表
 class Student(models.Model):
     id = models.AutoField(primary_key=True)
-    name = models.CharField(max_length=15)
-    sex = models.CharField(max_length=1)
-    class_name = models.CharField(max_length=6)
-    # 专业
-    profession = models.CharField(max_length=8)
+    name = models.CharField(max_length=15)  # 姓名
+    sex = models.CharField(max_length=1)  # 年龄
     stu_num = models.CharField(max_length=13, unique=True)  # 学号
-    teacher_name = models.CharField(max_length=15)
-    teach_name = models.CharField(max_length=15)
-    password = models.CharField(max_length=15, default='123456')
-    # 权限
-    permission = models.IntegerField(default=4)
+    password = models.CharField(max_length=15, default='123456')  # 密码
+    permission = models.IntegerField(default=4)  # 权限
+    class_name = models.ForeignKey('Class', to_field='class_name', related_name='student',
+                                   on_delete=models.CASCADE)
+
+
+# 班级表
+class Class(models.Model):
+    id = models.AutoField(primary_key=True)
+    class_name = models.CharField(max_length=6)  # 班级名称
+    profession = models.CharField(max_length=8)  # 专业
+    teacher_name = models.CharField(max_length=15)  # 班主任
+    teach_name = models.CharField(max_length=15)  # 任课老师
 
 
 # 学生信息表
