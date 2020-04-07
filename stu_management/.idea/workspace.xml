@@ -1,14 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e695860-e8a4-41d2-bd12-96accf80c108" name="Default Changelist" comment="">
+    <list default="true" id="83a149f2-2ebe-4288-af87-1a540a581d1c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/stu_management.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/stu_management.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/migrations/0002_change_class_res.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/migrations/0003_school_expression_status.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/stu_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/templates/main/high.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/main/high.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/templates/main/student_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/main/student_main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/templates/main/teach_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/main/teach_main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/templates/main/teacher_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/main/teacher_main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/templates/manage/manage_change_class.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/manage/manage_change_class.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/templates/manage/manage_dropout.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/manage/manage_dropout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/templates/manage/manage_expression.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/manage/manage_expression.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/templates/manage/manage_feedback.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/manage/manage_feedback.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/templates/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/templates/update/change_pwd.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/update/change_pwd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/views/change.py" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/views/change.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/views/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/views/data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/views/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/views/login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_management/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/stu_management/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/stu_management$tests.coverage" NAME="tests Coverage Results" MODIFIED="1585885458365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stu_app" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="stu_management@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="stu_management@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -40,26 +89,35 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/stu_app/static/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\project\stu_management\stu_app\static\js" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\project\stu_management\stu_app\static" />
       <recent name="D:\project\stu_management\stu_app\dispose_from" />
       <recent name="D:\project\stu_management\stu_app\urls" />
       <recent name="D:\project\stu_management\stu_app" />
     </key>
   </component>
   <component name="RunManager" selected="Python.tests">
+    <configuration name="high.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/stu_management/stu_app/templates/main/high.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="manage_change_class.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/stu_management/stu_app/templates/manage/manage_change_class.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="manage_dropout.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/stu_management/stu_app/templates/manage/manage_dropout.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="manage_expression.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/stu_management/stu_app/templates/manage/manage_expression.html">
+      <method v="2" />
+    </configuration>
     <configuration name="tests" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="stu_management" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -108,6 +166,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.tests" />
+        <item itemvalue="JavaScript Debug.high.html" />
+        <item itemvalue="JavaScript Debug.manage_change_class.html" />
+        <item itemvalue="JavaScript Debug.manage_expression.html" />
+        <item itemvalue="JavaScript Debug.manage_dropout.html" />
       </list>
     </recent_temporary>
   </component>
@@ -116,7 +178,12 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:stu_management@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -128,22 +195,35 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1e695860-e8a4-41d2-bd12-96accf80c108" name="Default Changelist" comment="" />
+      <changelist id="83a149f2-2ebe-4288-af87-1a540a581d1c" name="Default Changelist" comment="" />
       <created>1585528376227</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585528376227</updated>
       <workItem from="1585528378274" duration="2481000" />
       <workItem from="1585535514157" duration="3135000" />
-      <workItem from="1585617752848" duration="47252000" />
-      <workItem from="1586221203864" duration="253000" />
+      <workItem from="1586221753390" duration="37000" />
+      <workItem from="1586221808244" duration="16722000" />
     </task>
     <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="370" y="13" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586226430761">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="370" y="13" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1586226430761" />
     <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585624859194">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -152,40 +232,32 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="283" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1585626746046" />
-    <state x="92" y="92" width="1182" height="584" key="DiffContextDialog" timestamp="1585810780871">
+    <state width="1323" height="198" key="GridCell.Tab.0.bottom" timestamp="1586228213495">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="92" y="92" width="1182" height="584" key="DiffContextDialog/0.0.1366.768@0.0.1366.768" timestamp="1585810780871" />
-    <state width="1323" height="182" key="GridCell.Tab.0.bottom" timestamp="1586076100016">
+    <state width="1323" height="198" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1586228213495" />
+    <state width="1323" height="198" key="GridCell.Tab.0.center" timestamp="1586228213495">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1586076100016" />
-    <state width="1323" height="182" key="GridCell.Tab.0.center" timestamp="1586076100016">
+    <state width="1323" height="198" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1586228213495" />
+    <state width="1323" height="198" key="GridCell.Tab.0.left" timestamp="1586228213494">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1586076100016" />
-    <state width="1323" height="182" key="GridCell.Tab.0.left" timestamp="1586076100015">
+    <state width="1323" height="198" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1586228213494" />
+    <state width="1323" height="198" key="GridCell.Tab.0.right" timestamp="1586228213495">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1586076100015" />
-    <state width="1323" height="182" key="GridCell.Tab.0.right" timestamp="1586076100016">
+    <state width="1323" height="198" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1586228213495" />
+    <state x="184" y="26" key="SettingsEditor" timestamp="1586222465830">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1586076100016" />
-    <state x="184" y="26" key="SettingsEditor" timestamp="1585536855392">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="184" y="26" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1585536855392" />
-    <state x="529" y="300" key="VCS.ChangelistChooser" timestamp="1585810620918">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="529" y="300" key="VCS.ChangelistChooser/0.0.1366.768@0.0.1366.768" timestamp="1585810620918" />
+    <state x="184" y="26" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1586222465830" />
     <state x="475" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585626732054">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="475" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1585626732054" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/stu_management$tests.coverage" NAME="tests Coverage Results" MODIFIED="1585820239294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stu_app" />
+    <SUITE FILE_PATH="coverage/stu_management$tests.coverage" NAME="tests Coverage Results" MODIFIED="1586228152057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stu_app" />
   </component>
 </project>

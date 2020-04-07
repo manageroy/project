@@ -7,5 +7,6 @@ urlpatterns = [
     path('add/', include('stu_app.url.add_url')),
     path('change/', include('stu_app.url.change_url')),
     path('manage/', include('stu_app.url.manage_url')),
-    path('login',login.login)
+    path('login', login.login),
+    path('main', login.main)
 ]

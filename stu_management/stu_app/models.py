@@ -8,7 +8,6 @@ class Administrator(models.Model):
     name = models.CharField(max_length=15)
     permission = models.IntegerField()
     job_num = models.CharField(max_length=10, unique=True)  # 工号
-    manage_class = models.CharField(max_length=1)
     password = models.CharField(max_length=15, default='123456')
 
 
@@ -20,14 +19,14 @@ class Student(models.Model):
     stu_num = models.CharField(max_length=13, unique=True)  # 学号
     password = models.CharField(max_length=15, default='123456')  # 密码
     permission = models.IntegerField(default=4)  # 权限
-    class_name = models.ForeignKey('Class', to_field='class_name', related_name='student',
+    class_name = models.ForeignKey('Class', to_field='class_name', related_name='students',
                                    on_delete=models.CASCADE)
 
 
 # 班级表
 class Class(models.Model):
     id = models.AutoField(primary_key=True)
-    class_name = models.CharField(max_length=6)  # 班级名称
+    class_name = models.CharField(max_length=6, unique=True)  # 班级名称
     profession = models.CharField(max_length=8)  # 专业
     teacher_name = models.CharField(max_length=15)  # 班主任
     teach_name = models.CharField(max_length=15)  # 任课老师
@@ -84,7 +83,7 @@ class School_expression(models.Model):
 # 成绩表
 class Points(models.Model):
     id = models.AutoField(primary_key=True)
-    exam_time = models.CharField(max_length=3)
+    exam_time = models.CharField(max_length=10)
     write_points = models.IntegerField()
     competer_points = models.IntegerField()
     total_points = models.IntegerField()

@@ -1,5 +1,7 @@
 from django.shortcuts import render, HttpResponse
-from django.http import request
+from django.http import JsonResponse
+from stu_app import models
+from django.core.cache import cache
 
 
 def c_lass(request):
@@ -7,7 +9,16 @@ def c_lass(request):
 
 
 def grade(request):
-    pass
+    ponints = models.Points.objects.filter(stu_num=cache.get('stu_num'))
+    pon_list = []
+    for ponint in ponints:
+        pon_dict = {
+            'exam_time': ponint.exam_time,
+            'write_points': ponint.write_points,
+            'competer_points': ponint.competer_points,
+            'total_points': ponint.total_points}
+        pon_list.append(pon_dict)
+    return JsonResponse({'ponints': pon_list})
 
 
 def info(request):
