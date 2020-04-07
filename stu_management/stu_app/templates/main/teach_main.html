@@ -296,7 +296,18 @@ button {
             position: fixed;
             top: 38px;
             right: 103px;
-
+        }
+         .a_a img{
+            display: none;
+            position: fixed;
+            top: 77px;
+            right: 87px;
+            border: 1px solid black;
+            width: 117px;
+            height: 124px;
+        }
+        .a_a:hover img{
+            display: block;
         }
         .logout a{
             color: white;
@@ -356,7 +367,9 @@ button {
         <div class="logout">
             <h4 class="h4_name">欢迎,{{ name }}老师</h4>
             <a href="/v1.0/logout">退出</a>&nbsp;&nbsp;&nbsp;
-            <a>联系我们</a>
+            <a class="a_a">联系我们
+            <img src="../../static/images/erwei.png">
+            </a>
         </div>
         <h2 class="h2_class">管理班级</h2>
         <div class="table_in">
@@ -385,7 +398,7 @@ button {
             <h3>
                 <a class="a_name" href="#">录入成绩</a></h3>
             <h3>
-                <a class="a_name" href="#">设置密码</a></h3>
+                <a class="a_name" href="/v1.0/change/pwd">设置密码</a></h3>
         </div>
         <ul>
         <li></li>
