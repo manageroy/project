@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e695860-e8a4-41d2-bd12-96accf80c108" name="Default Changelist" comment="" />
+    <list default="true" id="1e695860-e8a4-41d2-bd12-96accf80c108" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/stu_app/templates/main/high.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/main/high.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/templates/main/student_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/main/student_main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/templates/main/teach_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/main/teach_main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/templates/main/teacher_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/templates/main/teacher_main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stu_app/views/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/stu_app/views/login.py" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,48 +17,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/stu_management$.coverage" NAME="第三题 Coverage Results" MODIFIED="1586218500297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/projectgithub/aiai/roy_lzr" />
+    <SUITE FILE_PATH="coverage/stu_management$.coverage" NAME="第三题 Coverage Results" MODIFIED="1586218500297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../projectgithub/aiai/roy_lzr" />
     <SUITE FILE_PATH="coverage/stu_management$tests.coverage" NAME="tests Coverage Results" MODIFIED="1586222691632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stu_app" />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/stu_app/views/data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#49#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stu_app/tests.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stu_management/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="81" column="28" selection-start-line="81" selection-start-column="28" selection-end-line="81" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -99,30 +72,31 @@
         <option value="$PROJECT_DIR$/stu_app/url/add_url.py" />
         <option value="$PROJECT_DIR$/stu_app/url/data_url.py" />
         <option value="$PROJECT_DIR$/stu_app/url/manage_url.py" />
-        <option value="$PROJECT_DIR$/stu_app/urls.py" />
         <option value="$PROJECT_DIR$/stu_app/templates/update/change_pwd.html" />
         <option value="$PROJECT_DIR$/stu_app/url/change_url.py" />
         <option value="$PROJECT_DIR$/stu_app/templates/login.html" />
-        <option value="$USER_HOME$/Desktop/project/stu_management/stu_app/views/change.py" />
-        <option value="$USER_HOME$/Desktop/project/stu_management/stu_app/views/login.py" />
+        <option value="$PROJECT_DIR$/stu_app/views/change.py" />
+        <option value="$PROJECT_DIR$/stu_app/views/login.py" />
         <option value="$PROJECT_DIR$/stu_app/views/change.py" />
         <option value="$PROJECT_DIR$/stu_app/templates/manage/manage_dropout.html" />
         <option value="$PROJECT_DIR$/stu_app/templates/manage/manage_feedback.html" />
         <option value="$PROJECT_DIR$/stu_app/templates/manage/manage_change_class.html" />
         <option value="$PROJECT_DIR$/stu_app/templates/manage/manage_expression.html" />
-        <option value="$PROJECT_DIR$/stu_app/templates/main/student_main.html" />
-        <option value="$PROJECT_DIR$/stu_app/templates/main/teacher_main.html" />
-        <option value="$PROJECT_DIR$/stu_app/templates/main/high.html" />
         <option value="$PROJECT_DIR$/stu_app/views/login.py" />
-        <option value="$PROJECT_DIR$/stu_app/templates/main/teach_main.html" />
         <option value="$PROJECT_DIR$/stu_app/views/data.py" />
         <option value="$PROJECT_DIR$/stu_management/settings.py" />
         <option value="$PROJECT_DIR$/stu_app/tests.py" />
+        <option value="$PROJECT_DIR$/stu_app/urls.py" />
+        <option value="$PROJECT_DIR$/stu_app/templates/main/high.html" />
+        <option value="$PROJECT_DIR$/stu_app/templates/main/student_main.html" />
+        <option value="$PROJECT_DIR$/stu_app/templates/main/teach_main.html" />
+        <option value="$PROJECT_DIR$/stu_app/templates/main/teacher_main.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="265" />
+    <option name="x" value="367" />
+    <option name="y" value="83" />
     <option name="width" value="1517" />
     <option name="height" value="1047" />
   </component>
@@ -159,6 +133,13 @@
               <item name="stu_app" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stu_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stu_management" type="462c0819:PsiDirectoryNode" />
+              <item name="stu_app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="manage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="stu_management" type="b2602c69:ProjectViewProjectNode" />
@@ -377,7 +358,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/project/stu_management" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -419,12 +400,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop/projectgithub/aiai/roy_lzr" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../projectgithub/aiai/roy_lzr" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/Desktop/projectgithub/aiai/roy_lzr/第三题.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../projectgithub/aiai/roy_lzr/第三题.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -519,11 +500,12 @@
       <workItem from="1585871913446" duration="12184000" />
       <workItem from="1585892944586" duration="7708000" />
       <workItem from="1586218187830" duration="3859000" />
+      <workItem from="1586224185802" duration="145000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42228000" />
+    <option name="totallyTimeSpent" value="42373000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -535,10 +517,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="265" y="0" width="1517" height="1047" extended-state="0" />
-    <editor active="true" />
+    <frame x="367" y="83" width="1517" height="1047" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1757035" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17776252" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -637,54 +618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/project/stu_management/stu_app/views/login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/project/stu_management/stu_app/views/data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/project/stu_management/stu_app/views/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/project/stu_management/stu_app/views/change.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/project/stu_management/stu_app/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stu_app/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
@@ -722,16 +655,6 @@
           <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stu_app/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -784,13 +707,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stu_app/templates/manage/manage_change_class.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="238" column="24" lean-forward="true" selection-start-line="238" selection-start-column="24" selection-end-line="238" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stu_app/static/js/vue.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-23001">
@@ -827,53 +743,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/李振茹/a_total.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="1" column="30" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/projectgithub/aiai/roy_lzr/第三题.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/projectgithub/aiai/roy_lzr/第二题.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/projectgithub/aiai/roy_lzr/tcp_clice.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/projectgithub/aiai/roy_lzr/tcp_serve.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-37" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/projectgithub/rrrrr/appear_movie.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9108">
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/projectgithub/learn-python/checkfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../李振茹/a_total.py" />
+    <entry file="file://$PROJECT_DIR$/../../projectgithub/aiai/roy_lzr/第三题.py" />
+    <entry file="file://$PROJECT_DIR$/../../projectgithub/aiai/roy_lzr/第二题.py" />
+    <entry file="file://$PROJECT_DIR$/../../projectgithub/aiai/roy_lzr/tcp_clice.py" />
+    <entry file="file://$PROJECT_DIR$/../../projectgithub/aiai/roy_lzr/tcp_serve.py" />
+    <entry file="file://$PROJECT_DIR$/../../projectgithub/rrrrr/appear_movie.py" />
+    <entry file="file://$PROJECT_DIR$/../../projectgithub/learn-python/checkfile.py" />
     <entry file="file://$PROJECT_DIR$/stu_app/templates/update/change_info.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -894,48 +770,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stu_app/templates/main/student_main.html">
+    <entry file="file://$PROJECT_DIR$/stu_app/views/login.py" />
+    <entry file="file://$PROJECT_DIR$/../envi/Lib/site-packages/django/db/backends/base/base.py" />
+    <entry file="file://$PROJECT_DIR$/stu_app/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="370" column="2" selection-start-line="370" selection-start-column="2" selection-end-line="370" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stu_app/templates/main/teach_main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="387" column="47" selection-start-line="387" selection-start-column="43" selection-end-line="387" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stu_app/templates/main/teacher_main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="377" column="16" lean-forward="true" selection-start-line="377" selection-start-column="16" selection-end-line="377" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stu_app/templates/main/high.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="385" column="47" selection-start-line="385" selection-start-column="43" selection-end-line="385" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stu_app/views/login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="495">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../envi/Lib/site-packages/django/db/backends/base/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="219" selection-start-line="219" selection-end-line="219" />
         </state>
       </provider>
     </entry>
@@ -946,22 +789,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stu_app/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stu_app/views/data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/templates/manage/manage_change_class.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-462">
+          <caret line="238" column="24" lean-forward="true" selection-start-line="238" selection-start-column="24" selection-end-line="238" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/templates/main/teacher_main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2541">
+          <caret line="359" column="14" lean-forward="true" selection-start-line="359" selection-start-column="14" selection-end-line="359" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/templates/main/teach_main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="357" column="33" selection-start-line="357" selection-start-column="33" selection-end-line="357" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/templates/main/student_main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="349" column="33" selection-start-line="349" selection-start-column="33" selection-end-line="349" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/templates/main/high.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="351" column="14" lean-forward="true" selection-start-line="351" selection-start-column="14" selection-end-line="351" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/views/login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
