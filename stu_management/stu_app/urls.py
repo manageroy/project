@@ -8,5 +8,6 @@ urlpatterns = [
     path('change/', include('stu_app.url.change_url')),
     path('manage/', include('stu_app.url.manage_url')),
     path('login', login.login),
-    path('main', login.main)
+    path('main', login.main),
+    path('logout', login.logout)
 ]

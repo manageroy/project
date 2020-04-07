@@ -39,3 +39,7 @@ def main(request):
         return render(request, '../templates/main/teach_main.html', {'name': cache.get('name')})
     else:
         return render(request, '../templates/main/student_main.html', {'name': cache.get('name')})
+
+
+def logout(request):
+    return HttpResponseRedirect('/v1.0/login')

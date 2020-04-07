@@ -33,7 +33,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/stu_management$tests.coverage" NAME="tests Coverage Results" MODIFIED="1585885458365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stu_app" />
+    <SUITE FILE_PATH="coverage/stu_management$.coverage" NAME="第三题 Coverage Results" MODIFIED="1586218500297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/projectgithub/aiai/roy_lzr" />
+    <SUITE FILE_PATH="coverage/stu_management$tests.coverage" NAME="tests Coverage Results" MODIFIED="1586222691632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stu_app" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -62,6 +63,12 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+>>>>>>> 86046293f662bd7c28cd7f4bf135a3f29ff1545b
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -70,6 +77,26 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
+=======
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>AUTH_PROFILE_MODULE</find>
+      <find>INSTALLED_APPS</find>
+      <find>.inp</find>
+      <find>table_in</find>
+      <find>#tabel_distance</find>
+      <find>24px</find>
+      <find>left_div2</find>
+      <find>h4_name</find>
+      <find>h2_class</find>
+      <find>left_div</find>
+      <find>h1</find>
+      <find>res</find>
+      <find>account</find>
+    </findStrings>
+  </component>
+>>>>>>> 86046293f662bd7c28cd7f4bf135a3f29ff1545b
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -80,8 +107,295 @@
       </set>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="ProjectId" id="1ZpUPJTGBkitlGGuC4TaNPT6j7i" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+=======
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/stu_app/views/add.py" />
+        <option value="$PROJECT_DIR$/stu_app/admin.py" />
+        <option value="$PROJECT_DIR$/stu_app/models.py" />
+        <option value="$PROJECT_DIR$/stu_app/url/login_url.py" />
+        <option value="$PROJECT_DIR$/stu_management/urls.py" />
+        <option value="$PROJECT_DIR$/stu_app/url/add_url.py" />
+        <option value="$PROJECT_DIR$/stu_app/url/data_url.py" />
+        <option value="$PROJECT_DIR$/stu_app/url/manage_url.py" />
+        <option value="$PROJECT_DIR$/stu_app/templates/update/change_pwd.html" />
+        <option value="$PROJECT_DIR$/stu_app/url/change_url.py" />
+        <option value="$PROJECT_DIR$/stu_app/templates/login.html" />
+        <option value="$USER_HOME$/Desktop/project/stu_management/stu_app/views/change.py" />
+        <option value="$PROJECT_DIR$/stu_app/views/change.py" />
+        <option value="$PROJECT_DIR$/stu_app/templates/manage/manage_dropout.html" />
+        <option value="$PROJECT_DIR$/stu_app/templates/manage/manage_feedback.html" />
+        <option value="$PROJECT_DIR$/stu_app/templates/manage/manage_change_class.html" />
+        <option value="$PROJECT_DIR$/stu_app/templates/manage/manage_expression.html" />
+        <option value="$PROJECT_DIR$/stu_app/views/data.py" />
+        <option value="$PROJECT_DIR$/stu_management/settings.py" />
+        <option value="$PROJECT_DIR$/stu_app/tests.py" />
+        <option value="$PROJECT_DIR$/stu_app/urls.py" />
+        <option value="$PROJECT_DIR$/stu_app/views/login.py" />
+        <option value="$USER_HOME$/Desktop/project/stu_management/stu_app/views/login.py" />
+        <option value="$PROJECT_DIR$/stu_app/templates/main/teacher_main.html" />
+        <option value="$PROJECT_DIR$/stu_app/templates/main/teach_main.html" />
+        <option value="$PROJECT_DIR$/stu_app/templates/main/student_main.html" />
+        <option value="$PROJECT_DIR$/stu_app/templates/main/high.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="362" />
+    <option name="width" value="1517" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectId" id="1ZpUPJTGBkitlGGuC4TaNPT6j7i" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="stu_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stu_management" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stu_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stu_management" type="462c0819:PsiDirectoryNode" />
+              <item name="stu_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stu_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stu_management" type="462c0819:PsiDirectoryNode" />
+              <item name="stu_app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stu_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stu_management" type="462c0819:PsiDirectoryNode" />
+              <item name="stu_app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stu_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stu_management" type="462c0819:PsiDirectoryNode" />
+              <item name="stu_app" type="462c0819:PsiDirectoryNode" />
+              <item name="url" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stu_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stu_management" type="462c0819:PsiDirectoryNode" />
+              <item name="stu_app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stu_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stu_management" type="462c0819:PsiDirectoryNode" />
+              <item name="stu_app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="change.py" type="8704e2dd:PyFileNode" />
+            </path>
+            <path>
+              <item name="stu_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stu_management" type="462c0819:PsiDirectoryNode" />
+              <item name="stu_app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="data.py" type="8704e2dd:PyFileNode" />
+            </path>
+            <path>
+              <item name="stu_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stu_management" type="462c0819:PsiDirectoryNode" />
+              <item name="stu_app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="login.py" type="8704e2dd:PyFileNode" />
+            </path>
+            <path>
+              <item name="stu_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stu_management" type="462c0819:PsiDirectoryNode" />
+              <item name="stu_app" type="462c0819:PsiDirectoryNode" />
+              <item name="models.py" type="8704e2dd:PyFileNode" />
+            </path>
+            <path>
+              <item name="stu_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stu_management" type="462c0819:PsiDirectoryNode" />
+              <item name="stu_management" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stu_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="stu_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (envi) &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="stu_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (envi) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="envi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stu_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (envi) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="envi" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stu_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (envi) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="envi" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stu_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (envi) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="envi" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="django" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stu_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (envi) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="envi" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="django" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stu_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (envi) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="envi" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="django" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="backends" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stu_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (envi) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="envi" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="django" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="backends" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stu_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (envi) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="envi" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="django" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="backends" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="base.py" type="8704e2dd:PyFileNode" />
+            </path>
+            <path>
+              <item name="stu_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (envi) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="envi" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="django" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="backends" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="base.py" type="8704e2dd:PyFileNode" />
+              <item name="BaseDatabaseWrapper" type="dd8bbb05:PyElementNode" />
+            </path>
+            <path>
+              <item name="stu_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (envi) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stu_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (envi) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="django" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stu_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (envi) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="django" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stu_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (envi) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="django" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="backends" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stu_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (envi) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="django" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="backends" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stu_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (envi) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="django" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="backends" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="base.py" type="8704e2dd:PyFileNode" />
+            </path>
+            <path>
+              <item name="stu_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (envi) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="django" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="backends" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="base.py" type="8704e2dd:PyFileNode" />
+              <item name="BaseDatabaseWrapper" type="dd8bbb05:PyElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+>>>>>>> 86046293f662bd7c28cd7f4bf135a3f29ff1545b
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -93,7 +407,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/project/stu_management" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -112,10 +426,29 @@
     <configuration name="manage_change_class.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/stu_management/stu_app/templates/manage/manage_change_class.html">
       <method v="2" />
     </configuration>
-    <configuration name="manage_dropout.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/stu_management/stu_app/templates/manage/manage_dropout.html">
+    <configuration name="manage_expression.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/stu_management/stu_app/templates/manage/manage_expression.html">
       <method v="2" />
     </configuration>
-    <configuration name="manage_expression.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/stu_management/stu_app/templates/manage/manage_expression.html">
+    <configuration name="第三题" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="stu_management" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop/projectgithub/aiai/roy_lzr" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Desktop/projectgithub/aiai/roy_lzr/第三题.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="tests" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -166,10 +499,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.tests" />
+        <item itemvalue="Python.第三题" />
         <item itemvalue="JavaScript Debug.high.html" />
         <item itemvalue="JavaScript Debug.manage_change_class.html" />
         <item itemvalue="JavaScript Debug.manage_expression.html" />
-        <item itemvalue="JavaScript Debug.manage_dropout.html" />
       </list>
     </recent_temporary>
   </component>
@@ -202,11 +535,27 @@
       <updated>1585528376227</updated>
       <workItem from="1585528378274" duration="2481000" />
       <workItem from="1585535514157" duration="3135000" />
+<<<<<<< HEAD
       <workItem from="1586221753390" duration="37000" />
       <workItem from="1586221808244" duration="16722000" />
     </task>
     <servers />
   </component>
+=======
+      <workItem from="1585617752848" duration="25343000" />
+      <workItem from="1585812205820" duration="6229000" />
+      <workItem from="1585818495313" duration="1342000" />
+      <workItem from="1585819866909" duration="360000" />
+      <workItem from="1585871913446" duration="12184000" />
+      <workItem from="1585892944586" duration="7708000" />
+      <workItem from="1586218187830" duration="8411000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="46780000" />
+  </component>
+>>>>>>> 86046293f662bd7c28cd7f4bf135a3f29ff1545b
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -216,6 +565,35 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
+<<<<<<< HEAD
+=======
+  <component name="ToolWindowManager">
+    <frame x="362" y="0" width="1517" height="1047" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23747426" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20619658" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32905984" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32905984" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.4903846" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32905984" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+>>>>>>> 86046293f662bd7c28cd7f4bf135a3f29ff1545b
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -258,6 +636,384 @@
     <state x="475" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1585626732054" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+<<<<<<< HEAD
     <SUITE FILE_PATH="coverage/stu_management$tests.coverage" NAME="tests Coverage Results" MODIFIED="1586228152057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stu_app" />
+=======
+    <SUITE FILE_PATH="coverage/stu_management$tests.coverage" NAME="tests Coverage Results" MODIFIED="1585728272313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stu_app" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/stu_app/templates/add/add_dropout.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/url/login_url.py" />
+    <entry file="file://$PROJECT_DIR$/stu_app/url/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/url/data_url.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/templates/register.html" />
+    <entry file="file://$PROJECT_DIR$/stu_app/url/add_url.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/templates/add/add_student.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="240" column="79" lean-forward="true" selection-start-line="240" selection-start-column="79" selection-end-line="240" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/project/stu_management/stu_app/views/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/project/stu_management/stu_app/views/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/project/stu_management/stu_app/views/change.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/project/stu_management/stu_app/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="246" column="12" lean-forward="true" selection-start-line="246" selection-start-column="12" selection-end-line="246" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_management/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/url/manage_url.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/views/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="15" selection-start-line="15" selection-end-line="16" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/templates/manage/manage_feedback.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="233" column="23" lean-forward="true" selection-start-line="233" selection-start-column="23" selection-end-line="233" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/templates/manage/manage_expression.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-528">
+          <caret line="227" column="9" lean-forward="true" selection-start-line="227" selection-start-column="9" selection-end-line="227" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/templates/manage/manage_change_class.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="238" column="24" lean-forward="true" selection-start-line="238" selection-start-column="24" selection-end-line="238" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/static/js/vue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-23001">
+          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/static/js/axios.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17125">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/static/images/register.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/views/add.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/李振茹/a_total.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="1" column="30" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/projectgithub/aiai/roy_lzr/第三题.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/projectgithub/aiai/roy_lzr/第二题.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/projectgithub/aiai/roy_lzr/tcp_clice.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/projectgithub/aiai/roy_lzr/tcp_serve.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-37" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/projectgithub/rrrrr/appear_movie.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9108">
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/projectgithub/learn-python/checkfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/templates/update/change_info.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/templates/update/change_pwd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-748">
+          <caret line="289" column="19" selection-start-line="289" selection-start-column="12" selection-end-line="289" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/views/change.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../envi/Lib/site-packages/django/db/backends/base/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="219" selection-start-line="219" selection-end-line="219" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-55">
+          <caret line="91" column="14" selection-start-line="91" selection-start-column="4" selection-end-line="91" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/views/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_management/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="81" column="28" selection-start-line="81" selection-start-column="28" selection-end-line="81" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/project/stu_management/stu_app/views/login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/views/login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="24" column="35" lean-forward="true" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/templates/manage/manage_dropout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="68" column="38" lean-forward="true" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/static/images/login.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/templates/main/high.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="337" column="23" lean-forward="true" selection-start-line="337" selection-start-column="23" selection-end-line="337" selection-end-column="23" />
+          <folding>
+            <element signature="e#9581#9587#0#HTML" expanded="true" />
+            <element signature="e#9587#9593#0#HTML" expanded="true" />
+            <element signature="e#9593#9599#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/templates/main/student_main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="712">
+          <caret line="397" column="56" selection-start-line="397" selection-start-column="56" selection-end-line="397" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/templates/main/teach_main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="745">
+          <caret line="400" column="56" selection-start-line="400" selection-start-column="56" selection-end-line="400" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/templates/main/teacher_main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="613">
+          <caret line="402" column="56" selection-start-line="402" selection-start-column="40" selection-end-line="402" selection-end-column="56" />
+          <folding>
+            <element signature="e#10064#10070#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/url/change_url.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_management/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu_app/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 86046293f662bd7c28cd7f4bf135a3f29ff1545b
   </component>
 </project>

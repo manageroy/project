@@ -5,7 +5,8 @@ from django.core.cache import cache
 
 
 def c_lass(request):
-    pass
+    classes = models.Student.objects.all()
+    return JsonResponse(classes)
 
 
 def grade(request):
@@ -22,20 +23,25 @@ def grade(request):
 
 
 def info(request):
-    pass
+    infos = models.Stu_msg.objects.all()
+    return JsonResponse(infos)
 
 
 def expression(request):
-    pass
+    expressions = models.School_expression.objects.all()
+    return JsonResponse(expressions)
 
 
 def changeClass(request):
-    pass
+    change_classes = models.Change_class.objects.all()
+    return JsonResponse(change_classes)
 
 
 def dropout(request):
-    pass
+    dropouts = models.Leave_school.objects.all()
+    return JsonResponse(dropouts)
 
 
 def feedback(request):
-    pass
+    feedbacks = models.Suggestions.objects.all()
+    return JsonResponse(feedbacks)
