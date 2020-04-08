@@ -201,44 +201,33 @@
             }
         }
         .p_in1{
-            position: fixed;
-            top: 155px;
-            left: 495px;
+            margin-top: 67px;
+            margin-left: 224px;
             font-size: 24px;
         }
-        .p_in2{
-            position: fixed;
-            top: 231px;
-            left: 495px;
+        #p_in2{
+             margin-top: 59px;
+            margin-left: 10px;
             font-size: 24px;
         }
-        .p_in3{
-            position: fixed;
-            top: 313px;
-            left: 495px;
-            font-size: 24px;
 
-        }
-        .p_in4{
-            position: fixed;
-            top: 400px;
-            left: 495px;
-            font-size: 24px;
-
-        }
         .inp{
-            position: fixed;
-            top: 510px;
-            left: 495px;
+            margin-top: 67px;
+            margin-left: 224px;
             font-size: 15px;
+            background-color: transparent;
         }
         .container h1{
             font-size:40px;
             color: white;
             font-weight: bold;
-            position: fixed;
-            top: 58px;
-            left: 506px;
+            margin-left: 249px;
+            margin-top: -33px;
+        }
+        #p_in3{
+            margin-top: 67px;
+            margin-left: 22px;
+            font-size: 15px;
         }
     </style>
 </head>
@@ -247,13 +236,13 @@
     <div class="container">
         <h1>事情详细记录</h1>
         <p class="p_in1">姓名: {{ res.stu_num.name }}</p>
-        <p class="p_in2">班级: {{ res.stu_num.class_name }}</p>
-        <p class="p_in3">班主任: {{ res.stu_num.teacher_name }}</p>
-        <p class="p_in4">事情原因: {{ res.reason }}</p>
+        <p class="p_in1">班级: {{ res.stu_num.class_name }}</p>
+        <p class="p_in1">班主任: {{ res.stu_num.teacher_name }}</p>
+        <p class="p_in1">事情原因: {{ res.reason }}</p>
         <form method="post" class="inp" action="/v1.0/manage/expression">
             <label><textarea  placeholder="处罚或奖励" name="result" spellcheck="true" rows="15" cols="50"></textarea></label>
-            <label><input type="text" name="credit" placeholder="学分变化"></label>
-            <label><input type="submit" value="确认"/></label>
+            <label><input id="p_in3" type="text" name="credit" placeholder="学分变化"></label>
+            <label><input id='p_in2' type="submit" value="确认"/></label>
         </form>
     </div>
         <ul>

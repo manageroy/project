@@ -12,7 +12,6 @@
             margin: 0;
             padding: 0;
             font: 16px/20px microsft yahei;
-            overflow-y: scroll;
         }
 
         .wrap {
@@ -73,13 +72,6 @@
             width: 400px;
         }
 
-        .to_login {
-            color: #a7c4c9;
-        }
-
-        .text {
-            color: #e2dfe4;
-        }
 
         .wrap ul {
             position: absolute;
@@ -234,16 +226,20 @@
             }
         }
         .form_pos{
-            position: fixed;
-            top: 257px;
-            left: 497px;
+            margin-top: 69px;
+        }
+        #h1_1{
+            color:white;
+            margin-top: 73px;
+            font-weight: bold;
+
         }
     </style>
 </head>
 <body>
 <div class="wrap" style="overflow-y:scroll;">
     <div class="container">
-        <h1 style="color:white;position: fixed;top: 181px;left: 498px;font-weight: bold;font-family: -apple-system,BlinkMacSystemFont">Welcome to Login</h1>
+        <h1 id="h1_1">Welcome to Login</h1>
         <form method="post" action="/v1.0/login" class="form_pos">
             <label><input type="text" placeholder="账号" name="job_num" autocomplete="off" required/></label>
             <label><input type="password" placeholder="密码" name="password" autocomplete="off" required/></label>

@@ -201,42 +201,19 @@
             }
         }
         .p_in1{
-            position: fixed;
-            top: 154px;
-            left: 486px;
+            margin-top: 67px;
+            margin-left: 224px;
             font-size: 24px;
         }
-        .p_in2{
-            position: fixed;
-            top: 231px;
-            left: 486px;
+        #p_in2{
+             margin-top: 75px;
+            margin-left: 10px;
             font-size: 24px;
         }
-        .p_in3{
-            position: fixed;
-            top: 313px;
-            left: 486px;
-            font-size: 24px;
 
-        }
-        .p_in4{
-            position: fixed;
-            top: 400px;
-            left: 486px;
-            font-size: 24px;
-
-        }
-        .p_in5{
-            position: fixed;
-            top: 487px;
-            left: 486px;
-            font-size: 24px;
-
-        }
         .inp{
-            position: fixed;
-            top: 573px;
-            left: 486px;
+            margin-top: 67px;
+            margin-left: 224px;
             font-size: 15px;
             background-color: transparent;
         }
@@ -244,9 +221,8 @@
             font-size:40px;
             color: white;
             font-weight: bold;
-            position: fixed;
-            top: 58px;
-            left: 506px;
+            margin-left: 249px;
+            margin-top: -33px;
         }
     </style>
 </head>
@@ -255,13 +231,13 @@
     <div class="container">
         <h1>转班详细记录</h1>
         <p class="p_in1">姓名: {{ res.stu_num.name }}</p>
-        <p class="p_in2">班级: {{ res.class_name }}</p>
-        <p class="p_in3">老师评价: {{  res.teacher_evaluate }}</p>
-        <p class="p_in4">希望转到: {{ res.before_class }}</p>
-        <p class="p_in5">转班原因: {{ res.change_class_reason }}</p>
+        <p class="p_in1">班级: {{ res.class_name }}</p>
+        <p class="p_in1">老师评价: {{  res.teacher_evaluate }}</p>
+        <p class="p_in1">希望转到: {{ res.before_class }}</p>
+        <p class="p_in1">转班原因: {{ res.change_class_reason }}</p>
         <form method="post" class="inp" action="/v1.0/manage/expression">
             <label><textarea  placeholder="结果" name="result" spellcheck="true" rows="15" cols="50"></textarea></label>
-            <label><input type="submit" value="确定"/></label>
+            <label><input id="p_in2" type="submit" value="确定"/></label>
         </form>
     </div>
         <ul>

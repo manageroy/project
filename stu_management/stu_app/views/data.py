@@ -1,4 +1,3 @@
-from django.shortcuts import render, HttpResponse
 from django.http import JsonResponse
 from stu_app import models
 from django.core.cache import cache
