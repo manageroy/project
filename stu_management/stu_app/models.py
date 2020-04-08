@@ -18,6 +18,7 @@ class Student(models.Model):
     sex = models.CharField(max_length=1)  # 年龄
     stu_num = models.CharField(max_length=13, unique=True)  # 学号
     password = models.CharField(max_length=15, default='123456')  # 密码
+    credit = models.IntegerField(default=100)  # 学分
     permission = models.IntegerField(default=4)  # 权限
     class_name = models.ForeignKey('Class', to_field='class_name', related_name='students',
                                    on_delete=models.CASCADE)
@@ -50,8 +51,7 @@ class Stu_msg(models.Model):
     tuition = models.CharField(max_length=6)
     # 贷款
     loans = models.CharField(max_length=6)
-    # 学分
-    credit = models.IntegerField(default=100)
+
     stu_num = models.OneToOneField('Student', to_field='stu_num', related_name='stu_info',
                                    on_delete=models.CASCADE)
 
@@ -76,6 +76,7 @@ class School_expression(models.Model):
     punish = models.TextField()
     result = models.CharField(max_length=3)
     status = models.CharField(default='0', max_length=2)
+    time = models.DateTimeField(auto_now_add=True)
     stu_num = models.ForeignKey('Student', to_field='stu_num', related_name='school_expression',
                                 on_delete=models.CASCADE)
 

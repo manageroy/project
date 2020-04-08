@@ -11,10 +11,10 @@ def expression(request):
     credit = request.POST.get('credit')
     ex.punish = result
     ex.result = credit
-    ex.stu_num.stu_info.credit = eval(f'{ex.stu_num.stu_info.credit} + {credit}')
-    ex.stu_num.stu_info.save()
-    ex.save()
-    # ex.status = 1
+    ex.stu_num.credit = eval(f'{ex.stu_num.credit} + {credit}')
+    ex.stu_num.save()
+    # ex.save()
+    ex.status = 1
     ex.save()
     return HttpResponse('afeiowj')
 

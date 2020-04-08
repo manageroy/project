@@ -3,29 +3,30 @@ from django.http import JsonResponse
 from stu_app import models
 from django.core.cache import cache
 
+
 # 班主任页管理班级
 def classes(request):
     try:
         teacher_obj = models.Administrator.objects.get(stu_num=cache.get('stu_num'))
-        teacher_name=teacher_obj.name
-        classes=models.Class.objects.filter(teacher_name=teacher_name)
-        class_lsit=[]
+        teacher_name = teacher_obj.name
+        classes = models.Class.objects.filter(teacher_name=teacher_name)
+        class_lsit = []
         for clas in classes:
-            clas_dict={
-                'class_name':clas.class_name,
-                'profession':clas.profession,
-                'teacher_name':clas.teacher_name,
-                'teach_name':clas.teach_name
+            clas_dict = {
+                'class_name': clas.class_name,
+                'profession': clas.profession,
+                'teacher_name': clas.teacher_name,
+                'teach_name': clas.teach_name
             }
             class_lsit.append(clas_dict)
-        return JsonResponse({'classes':class_lsit})
+        return JsonResponse({'classes': class_lsit})
     except Exception as e:
         return JsonResponse({'classes': [{
-                        'class_name': 'None',
-                        'profession':'None',
-                         'teacher_name':'None',
-                         'teach_name':'None'
-                          }]})
+            'class_name': 'None',
+            'profession': 'None',
+            'teacher_name': 'None',
+            'teach_name': 'None'
+        }]})
 
 
 # 同一个班级的同学的所有信息
@@ -48,41 +49,34 @@ def class_student(request):
         return JsonResponse({'class_students': same_classstudent_list})
     except Exception as e:
         return JsonResponse({'class_students': [{
-                        'id': 'None',
-                        'name':'None',
-                         'sex':'None',
-                         'phone':'None',
-                        'address': 'None',
-                        'credit':'None',
-                          }]})
+            'id': 'None',
+            'name': 'None',
+            'sex': 'None',
+            'phone': 'None',
+            'address': 'None',
+            'credit': 'None',
+        }]})
 
 
 # 个人分数
 def grade(request):
-    try:
-        points = models.Points.objects.filter(stu_num=cache.get('stu_num'))
-        pon_list = []
-        for point in points:
-            pon_dict = {
-                'exam_time': point.exam_time,
-                'write_points': point.write_points,
-                'competer_points': point.competer_points,
-                'total_points': point.total_points
-            }
-            pon_list.append(pon_dict)
-        return JsonResponse({'points': pon_list})
-    except Exception as e:
-        return JsonResponse({'points': [{
-            'exam_time': 'None',
-            'write_points': 'None',
-            'competer_points': 'None',
-            'total_points': 'None'
-        }]})
+    points = models.Points.objects.filter(stu_num=cache.get('stu_num'))
+    print(points)
+    pon_list = []
+    for point in points:
+        pon_dict = {
+            'exam_time': point.exam_time,
+            'write_points': point.write_points,
+            'competer_points': point.competer_points,
+            'total_points': point.total_points
+        }
+        pon_list.append(pon_dict)
+    return JsonResponse({'points': pon_list})
 
 
 # 个人信息
 def info(request):
-    permission=cache.get('permission')
+    permission = cache.get('permission')
     infos = models.Stu_msg.objects.filter(stu_num=cache.get('stu_num'))
     infos_list = []
     for info in infos:
@@ -125,32 +119,20 @@ def info(request):
     return JsonResponse({'infos': infos_list})
 
 
-
 # 表现表
 def total_expression(request):
-    try:
-        expressions = models.School_expression.objects.filter()
-        expression_list = []
-        for expression in expressions:
-            expression_dict = {
-                'name': expression.stu_num.name,
-                'reason': expression.reason,
-                'punish': expression.punish,
-                'result': expression.result,
-                'teacher_name': expression.teacher_name,
-                'id': expression.id
-            }
-            expression_list.append(expression_dict)
-        return JsonResponse({'expressions': expression_list})
-    except Exception as e:
-        return JsonResponse({'expressions': [{
-            'name': 'None',
-            'reason': 'None',
-            'punish': 'None',
-            'result': 'None',
-            'teacher_name': 'None',
-            'id': 'None'
-        }]})
+    expressions = models.School_expression.objects.filter(stu_num=cache.get('stu_num'))
+    expression_list = []
+    for expression in expressions:
+        expression_dict = {
+            'reason': expression.reason,
+            'punish': expression.punish,
+            'result': expression.result,
+            'time': expression.time.today(),
+        }
+        expression_list.append(expression_dict)
+    return JsonResponse({'expressions': expression_list, 'credit': expressions[0].stu_num.credit})
+
 
 # 转班表
 def changeClass(request):
@@ -219,4 +201,3 @@ def feedback(request):
             'time': 'None',
             'id': 'None'
         }]})
-

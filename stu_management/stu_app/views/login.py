@@ -10,7 +10,6 @@ def login(request):
     else:
         job_num = request.POST.get('job_num')
         password = request.POST.get('password')
-        print(job_num)
         if 's' in job_num:
             obj_stu = models.Student.objects.get(stu_num=job_num, password=password)
             if obj_stu:
@@ -31,7 +30,9 @@ def login(request):
 
 
 def main(request):
-    if cache.get('permission') == 0:
+    if cache.get('stu_num') == None:
+        return render(request, '../templates/login.html')
+    elif cache.get('permission') == 0:
         return render(request, '../templates/main/high.html', {'name': cache.get('name')})
     elif cache.get('permission') == 1:
         return render(request, '../templates/main/teacher_main.html', {'name': cache.get('name')})

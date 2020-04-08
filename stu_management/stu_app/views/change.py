@@ -1,20 +1,22 @@
 from django.shortcuts import render, HttpResponse
 from stu_app import models
+from django.core.cache import cache
 import json
 
 
 def pwd(request):
-    if request.method == 'GET':
-        return render(request, 'update/change_pwd.html')
     req = json.loads(request.body)
-    account = req['account']
     pwd = req['pwd']
     pwd1 = req['pwd1']
-    res = models.Student.objects.filter(stu_num=account, password=pwd)[0]
-    res.password = pwd1
-    res.save()
-    return HttpResponse('ok')
-
+    res = models.Student.objects.filter(stu_num=cache.get('stu_num'), password=pwd).first()
+    if res:
+        res.password = pwd1
+        res.save()
+        cache.delete('stu_num')
+        cache.delete('name')
+        cache.delete('permission')
+        return HttpResponse('ok')
+    return HttpResponse('原密码错误')
 
 
 def info(request):
