@@ -1,5 +1,6 @@
 from django.shortcuts import render, HttpResponse
 from stu_app import models
+import json
 
 
 def res(request, parameter: list):
@@ -62,11 +63,9 @@ def grade(request):
 
 
 def feedback(request):
-    if request.method == 'GET':
-        return render(request, 'add/add_feedback.html')
-    suggestion = request.POST.get('suggestion')
+    suggestion = json.loads(request.body)['suggestion']
     models.Suggestions(suggestion=suggestion).save()
-    return HttpResponse('ok')
+    return HttpResponse('提交成功')
 
 
 def expression(request):

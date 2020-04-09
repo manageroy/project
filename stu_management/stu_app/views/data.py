@@ -60,7 +60,6 @@ def class_student(request):
 # 个人分数
 def grade(request):
     points = models.Points.objects.filter(stu_num=cache.get('stu_num'))
-    print(points)
     pon_list = []
     for point in points:
         pon_dict = {
@@ -75,47 +74,21 @@ def grade(request):
 
 # 个人信息
 def info(request):
-    permission = cache.get('permission')
-    infos = models.Stu_msg.objects.filter(stu_num=cache.get('stu_num'))
-    infos_list = []
-    for info in infos:
-        if permission == 2:
-            info_dict = {
-                'name': info.stu_num.name,
-                'sex': info.stu_num.sex,
-                'class_name': info.stu_num.class_name,
-                'profession': info.stu_num.profession,
-                'stu_num': info.stu_num.stu_num,
-                'teacher_name': info.stu_num.teacher_name,
-                'teach_name': info.stu_num.teach_name,
-                'age': info.age,
-                'address': info.address,
-                'phone': info.phone,
-                'creadit': info.credit
-            }
-        else:
-            info_dict = {
-                'name': info.stu_num.name,
-                'sex': info.stu_num.sex,
-                'class_name': info.stu_num.class_name,
-                'profession': info.stu_num.profession,
-                'stu_num': info.stu_num.stu_num,
-                'teacher_name': info.stu_num.teacher_name,
-                'teach_name': info.stu_num.teach_name,
-                'age': info.age,
-                'address': info.address,
-                'time_of_enrollment': info.time_of_enrollment,
-                'recruiter': info.recruiter,
-                'phone': info.phone,
-                'parent': info.parent,
-                'parent_phone': info.parent_phone,
-                'tuition': info.tuition,
-                'loans': info.loans,
-                'creadit': info.credit
-            }
-        infos_list.append(info_dict)
-
-    return JsonResponse({'infos': infos_list})
+    info_obj = models.Stu_msg.objects.filter(stu_num=cache.get('stu_num')).first()
+    info_dict = {
+        'name': info_obj.stu_num.name,
+        'sex': info_obj.stu_num.sex,
+        'class_name': info_obj.stu_num.class_name.class_name,
+        'profession': info_obj.stu_num.class_name.profession,
+        'stu_num': info_obj.stu_num.stu_num,
+        'teacher_name': info_obj.stu_num.class_name.teacher_name,
+        'teach_name': info_obj.stu_num.class_name.teach_name,
+        'age': info_obj.age,
+        'address': info_obj.address,
+        'phone': info_obj.phone,
+        'creadit': info_obj.stu_num.credit
+    }
+    return JsonResponse({'info': info_dict})
 
 
 # 表现表

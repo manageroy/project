@@ -27,11 +27,27 @@
     </div>
     <div id="app1">
         <div class="left_div2">
+            <h3><a class="a_name" @click="info" href="#">个人信息</a></h3>
             <h3><a class="a_name" @click="grade" href="#">成绩记录</a></h3>
             <h3><a class="a_name" @click="total_expression" href="#">在校表现</a></h3>
-            <h3><a class="a_name" @click="info" href="#">录入信息</a></h3>
+            <h3><a class="a_name" href="/v1.0/add/info">录入信息</a></h3>
             <h3><a class="a_name" @click="password" href="#">设置密码</a></h3>
             <h3><a class="a_name" @click="suggest" href="#">提交建议</a></h3>
+        </div>
+        <div v-show="level==0">
+            <h2 class="h2_class">个人信息</h2>
+            <div class="info_div">
+                <p>姓名:{[ stu_info.name ]}</p>
+                <p>性别:{[ stu_info.sex ]}</p>
+                <p>班级:{[ stu_info.class_name ]}</p>
+                <p>专业:{[ stu_info.profession ]}</p>
+                <p>学号:{[ stu_info.stu_num ]}</p>
+                <p>班主任:{[ stu_info.teacher_name ]}</p>
+                <p>任课老师:{[ stu_info.teach_name ]}</p>
+                <p>年龄:{[ stu_info.age ]}</p>
+                <p>籍贯:{[ stu_info.address ]}</p>
+                <p>手机号码:{[ stu_info.phone ]}</p>
+            </div>
         </div>
         <div v-show="level==1">
             <h2 class="h2_class">考试信息</h2>
@@ -72,18 +88,33 @@
                 </table>
             </div>
         </div>
-        <div v-show="level==4">
+        <div v-show="level==3">
             <h2 class="h2_class">设置密码</h2>
             <div class="container">
                 <form>
-                    <label><input type="text" placeholder="原密码" v-model="pwd" name="pwd" autocomplete="off"
+                    <label><input type="text" placeholder="原密码" v-model="pwd" name="pwd"
+                                  autocomplete="off"
                                   required/></label>
                     <label><input type="password" placeholder="更改密码" v-model="pwd1" name="pwd1" autocomplete="off"
                                   required/></label>
                     <label><input type="password" placeholder="确认密码" v-model="pwd2" name="pwd2" autocomplete="off"
                                   required/></label>
-                    <p>{{ error }}</p>
+                    <p v-if="mess">{[ mess ]}</p>
                     <label><input type="button" @click="verify" value="提交"/></label>
+                </form>
+            </div>
+        </div>
+        <div v-show="level==4">
+            <h2 class="h2_class">提交建议</h2>
+            <div class="containers">
+                <form>
+                    <label><textarea id="inp" name="suggestion" v-model="suggestion" placeholder="请输入要提交的建议" required
+                                     spellcheck="true"
+                                     rows="15"
+                                     cols="80"></textarea>
+                    </label>
+                    <p v-if="mess">{[ mess ]}</p>
+                    <label><input type="button" @click="suggest_add" value="提交"/></label>
                 </form>
             </div>
         </div>
@@ -104,58 +135,77 @@
             pwd: '',
             pwd1: '',
             pwd2: '',
+            mess: '',
+            suggestion: '',
+            stu_info: []
         },
         methods: {
+            info: function () {
+                this.level = 0;
+                axios.post('http://127.0.0.1:8000/v1.0/data/info')
+                    .then((res) => {
+                        this.stu_info = res.data.info;
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+            },
             grade: function () {
+                this.level = 1;
                 axios.post('http://127.0.0.1:8000/v1.0/data/grade')
                     .then((response) => {
                         this.grade_mes = response.data.points;
-                        this.level = 1;
                         console.log(this.level);
                         console.log(this.grade_mes)
                     })
                     .catch(function (error) {
                         console.log(error);
                     });
-            }, total_expression: function () {
+            },
+            total_expression: function () {
+                this.level = 2;
                 axios.post('http://127.0.0.1:8000/v1.0/data/expression')
                     .then((res) => {
                         this.expr_mes = res.data.expressions;
                         this.expr_data = res.data.credit;
-                        this.level = 2;
                         console.log(this.level)
                     })
                     .catch(function (error) {
                         console.log(error);
                     });
             },
-            info: function () {
-            },
             password: function () {
-                this.level = 4
+                this.level = 3
             },
             suggest: function () {
+                this.level = 4
             },
             verify: function () {
-                console.log(this.pwd, this.pwd1);
                 if (this.pwd1 === this.pwd2) {
                     axios.post('http://127.0.0.1:8000/v1.0/change/pwd', {
                         pwd: this.pwd,
                         pwd1: this.pwd1
-                    })
-                        .then((response) => {
-                            if (response.data === '原密码错误') {
-                                console.log(this.error);
-                                this.error = '原密码错误';
-                                console.log(this.error)
-                            }
-                        })
-                        .catch(function (error) {
-                            console.log(error);
-                        });
+                    }).then((response) => {
+                        this.mess = response.data;
+                        this.pwd = '';
+                        this.pwd1 = '';
+                        this.pwd2 = '';
+                    }).catch(function (error) {
+                        console.log(error);
+                    });
                 } else {
-                    this.error = '两次密码不一样'
+                    this.mess = '两次密码不一样';
                 }
+            },
+            suggest_add: function () {
+                axios.post('http://127.0.0.1:8000/v1.0/add/feedback', {
+                    suggestion: this.suggestion
+                }).then((response) => {
+                    this.mess = response.data;
+                    this.suggestion = ''
+                }).catch(function (error) {
+                    console.log(error);
+                });
             }
         }
     });

@@ -15,7 +15,7 @@ def pwd(request):
         cache.delete('stu_num')
         cache.delete('name')
         cache.delete('permission')
-        return HttpResponse('ok')
+        return HttpResponse('密码修改成功')
     return HttpResponse('原密码错误')
 
 
