@@ -1,5 +1,5 @@
+import json
 from django.shortcuts import render, HttpResponse
-
 from stu_app import models
 
 
@@ -32,8 +32,9 @@ def change_class(request):
 
 
 def dropout(request):
-    pass
-
-
-def feedback(request):
-    pass
+    res = json.loads(request.body)
+    drop = models.Leave_school.objects.filter(id=res['id']).first()
+    drop.res = res['result']
+    drop.status = 1
+    drop.save()
+    return HttpResponse('ok')

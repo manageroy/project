@@ -51,7 +51,6 @@ class Stu_msg(models.Model):
     tuition = models.CharField(max_length=6)
     # 贷款
     loans = models.CharField(max_length=6)
-
     stu_num = models.OneToOneField('Student', to_field='stu_num', related_name='stu_info',
                                    on_delete=models.CASCADE)
 

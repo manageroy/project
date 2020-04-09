@@ -133,43 +133,32 @@ def changeClass(request):
 
 # 退学表
 def dropout(request):
-    try:
-        dropouts = models.Leave_school.objects.filter()
-        dropout_list = []
-        for dropout in dropouts:
-            dropout_dict = {
-                'name': dropout.stu_num.name,
-                'reason': dropout.reason,
-                'teacher_name': dropout.stu_num.teacher_name,
-                'id': dropout.id
-            }
-            dropout_list.append(dropout_dict)
-        return JsonResponse({'dropouts': dropout_list})
-    except Exception as e:
-        return JsonResponse({'dropouts': [{
-            'name': 'None',
-            'reason': 'None',
-            'teacher_name': 'None',
-            'id': 'None'
-        }]})
+    dropouts = models.Leave_school.objects.filter(status=0)
+    dropout_list = []
+    for dropout in dropouts:
+        dropout_dict = {
+            'name': dropout.stu_num.name,
+            'class_name': dropout.stu_num.class_name.class_name,
+            'profession': dropout.stu_num.class_name.profession,
+            'reason': dropout.reason,
+            'time_of_enrollment': dropout.stu_num.stu_info.time_of_enrollment,
+            'teacher_name': dropout.stu_num.class_name.teacher_name,
+            'id': dropout.id
+        }
+        dropout_list.append(dropout_dict)
+    return JsonResponse({'dropouts': dropout_list})
 
 
 # 反馈表
 def feedback(request):
-    try:
-        feedbacks = models.Suggestions.objects.filter()
-        feedback_list = []
-        for feedback in feedbacks:
-            feedback_dict = {
-                'suggestion': feedback.suggestion,
-                'time': feedback.time,
-                'id': feedback.id
-            }
-            feedback_list.append(feedback_dict)
-        return JsonResponse({'feedbacks': feedback_list})
-    except Exception as e:
-        return JsonResponse({'feedbacks': [{
-            'suggestion': 'None',
-            'time': 'None',
-            'id': 'None'
-        }]})
+    feedbacks = models.Suggestions.objects.filter(status=0)
+    feedback_list = []
+    for suggestion in feedbacks:
+        feedback_dict = {
+            'suggestion': suggestion.suggestion,
+            'time': suggestion.time,
+        }
+        feedback_list.append(feedback_dict)
+        suggestion.status = 1
+        suggestion.save()
+    return JsonResponse({'feedbacks': feedback_list})
