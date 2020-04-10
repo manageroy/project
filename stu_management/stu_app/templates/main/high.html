@@ -28,14 +28,60 @@
     </div>
     <div id="app">
         <div class="left_div2">
-            <h3><a class="a_name" href="#">班级</a></h3>
-            <h3><a class="a_name" href="#">违纪事务</a></h3>
-            <h3><a class="a_name" href="#">转班事务</a></h3>
+            <h3><a class="a_name" @click="see_class" href="#">班级</a></h3>
+            <h3><a class="a_name" @click="expression" href="#">违纪事务</a></h3>
+            <h3><a class="a_name" @click="change_classes" href="#">转班事务</a></h3>
             <h3><a class="a_name" @click="dropout" href="#">退学事务</a></h3>
             <h3><a class="a_name" @click="suggestion" href="#">意见清单</a></h3>
             <h3><a class="a_name" @click="password" href="#">设置密码</a></h3>
         </div>
         <div>
+            <div v-show="level==1">
+                <h2 class="h2_class">退学</h2>
+                <div class="table_in">
+                    <table class="table table-striped tab">
+                        <tr>
+                            <th>序号</th>
+                            <th>姓名</th>
+                            <th>专业</th>
+                            <th>班级</th>
+                            <th>班主任</th>
+                            <th>详情</th>
+                        </tr>
+                        <tr class="tr_look" v-for="(su,ind) in expression_list">
+                            <td>{[ind + 1]}</td>
+                            <td>{[su.name]}</td>
+                            <td>{[su.profession]}</td>
+                            <td>{[su.class_name]}</td>
+                            <td>{[su.teacher_name]}</td>
+                            <td @click="details_two(ind)" class="tab_a">详情</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div v-show="level==2">
+                <h2 class="h2_class">退学</h2>
+                <div class="table_in">
+                    <table class="table table-striped tab">
+                        <tr>
+                            <th>序号</th>
+                            <th>姓名</th>
+                            <th>专业</th>
+                            <th>之前班级</th>
+                            <th>班主任</th>
+                            <th>详情</th>
+                        </tr>
+                        <tr class="tr_look" v-for="(su,ind) in changeclasses">
+                            <td>{[ind + 1]}</td>
+                            <td>{[su.name]}</td>
+                            <td>{[su.profession]}</td>
+                            <td>{[su.before_class]}</td>
+                            <td>{[su.teacher_name]}</td>
+                            <td @click="details_one(ind)" class="tab_a">详情</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
             <div v-show="level==3">
                 <h2 class="h2_class">退学</h2>
                 <div class="table_in">
@@ -46,6 +92,7 @@
                             <th>专业</th>
                             <th>班级</th>
                             <th>班主任</th>
+                            <th>详情</th>
                         </tr>
                         <tr class="tr_look" v-for="(su,ind) in drops">
                             <td>{[ind + 1]}</td>
@@ -53,7 +100,7 @@
                             <td>{[su.profession]}</td>
                             <td>{[su.class_name]}</td>
                             <td>{[su.teacher_name]}</td>
-                            <td @click="details(ind)">详情</td>
+                            <td @click="details(ind)" class="tab_a">详情</td>
                         </tr>
                     </table>
                 </div>
@@ -91,22 +138,104 @@
                     </form>
                 </div>
             </div>
+            <div v-show="level==0">
+                <div class="table_in">
+                    <table class="table table-striped tab">
+                        <tr>
+                            <th>序号</th>
+                            <th>班级</th>
+                            <th>专业</th>
+                            <th>任课老师</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr class="tr_look" v-for="(su,index) in classes">
+                            <td>{[index + 1]}</td>
+                            <td>{[su.class_name]}</td>
+                            <td>{[su.profession]}</td>
+                            <td>{[su.teach_name]}</td>
+                            <td><a class="td_a" @click="details_class(index)">查看</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
         <div>
             <div class="container" v-show="level==6">
-                <p class="p_in1">姓名: {[ drop.name ]}</p>
-                <p class="p_in1">专业: {[ drop.profession ]}</p>
-                <p class="p_in1">班级: {[ drop.class_name ]}</p>
-                <p class="p_in1">班主任: {[ drop.teacher_name ]}</p>
-                <p class="p_in1">入学时间: {[ drop.time_of_enrollment ]}</p>
-                <p class="p_in1">退学原因: {[ drop.reason ]}</p>
+                <p class="p_in1">姓名: {[ in_drop.name ]}</p>
+                <p class="p_in1">专业: {[ in_drop.profession ]}</p>
+                <p class="p_in1">班级: {[ in_drop.class_name ]}</p>
+                <p class="p_in1">班主任: {[ in_drop.teacher_name ]}</p>
+                <p class="p_in1">入学时间: {[ in_drop.time_of_enrollment ]}</p>
+                <p class="p_in1">退学原因: {[ in_drop.reason ]}</p>
                 <form class="inp">
                     <label><textarea placeholder="结果" v-model="result" name="result" spellcheck="true" rows="5"
-                                     cols="50"></textarea></label>
+                                     cols="33"></textarea></label>
+                    <label><input type="radio" class="radio_l" name="select" value="male"/>同意</label>
+                    <label><input type="radio" class="radio_r" name="select" value="female"/>不同意</label>
+                    <p v-if="mess">{[ mess ]}</p>
                     <label><input class='p_in2' @click="res_drop" type="button" value="确认"/></label>
                 </form>
-                <label v-if="index!=0" @click="up" class="up">上一条</label>
-                <label v-if="index!=max_index" class="down" @click="down">下一条</label>
+                <label v-if="index!=0" @click="up" class="up tab_a">上一条</label>
+                <label v-if="index!=max_index" class="down tab_a" @click="down">下一条</label>
+            </div>
+            <div class="container" v-show="level==7">
+                <p class="p_in1">姓名: {[ in_drop.name ]}</p>
+                <p class="p_in1">班级: {[ in_drop.class_name ]}</p>
+                <p class="p_in1">专业: {[ in_drop.profession ]}</p>
+                <p class="p_in1">班主任: {[ in_drop.teacher_name ]}</p>
+                <p class="p_in1">希望转到: {[ in_drop.before_class ]}</p>
+                <p class="p_in1">转班原因: {[ in_drop.reason ]}</p>
+                <form class="inp">
+                    <label><textarea placeholder="结果" v-model="result" spellcheck="true" rows="5"
+                                     cols="33"></textarea></label>
+                    <label><input type="radio" class="radio_l" v-model="sele" value="male"/>同意</label>
+                    <label><input type="radio" class="radio_r" v-model="sele" value="female"/>不同意</label>
+                    <p v-if="mess">{[ mess ]}</p>
+                    <label><input class="p_in2" type="button" @click="change_class" value="确定"/></label>
+                </form>
+                <label v-if="index!=0" @click="up" class="up tab_a">上一条</label>
+                <label v-if="index!=max_index" class="down tab_a" @click="down">下一条</label>
+            </div>
+            <div class="container" v-show="level==8">
+                <p class="p_in1">姓名: {[ in_drop.name ]}</p>
+                <p class="p_in1">班级: {[ in_drop.class_name ]}</p>
+                <p class="p_in1">专业: {[ in_drop.profession ]}</p>
+                <p class="p_in1">班主任: {[ in_drop.teacher_name ]}</p>
+                <p class="p_in1">班级: {[ in_drop.class_name ]}</p>
+                <p class="p_in1">原因: {[ in_drop.reason ]}</p>
+                <p class="p_in1">时间: {[ in_drop.time ]}</p>
+                <form class="inp">
+                    <label><textarea placeholder="结果" v-model="result" spellcheck="true" rows="5"
+                                     cols="33"></textarea></label>
+                    <label><input type="text" name="credit" v-model="credit" placeholder="学分变化"></label>
+                    <p v-if="mess">{[ mess ]}</p>
+                    <label><input class="p_in2" type="button" @click="change_expression" value="确定"/></label>
+                </form>
+                <label v-if="index!=0" @click="up" class="up tab_a">上一条</label>
+                <label v-if="index!=max_index" class="down tab_a" @click="down">下一条</label>
+            </div>
+            <div v-show="level==9">
+                <p class="td_p" @click="backtrack">返回上一级</p>
+                <div class="table_in">
+                    <table class="table table-striped tab">
+                        <tr>
+                            <th>序号</th>
+                            <th>姓名</th>
+                            <th>性别</th>
+                            <th>手机号</th>
+                            <th>家庭住址</th>
+                            <th>学分</th>
+                        </tr>
+                        <tr class="tr_look" v-for="(su,index) in class_student">
+                            <td>{[index + 1]}</td>
+                            <td>{[su.name]}</td>
+                            <td>{[su.sex]}</td>
+                            <td>{[su.phone]}</td>
+                            <td>{[su.address]}</td>
+                            <td>{[su.credit]}</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
@@ -133,7 +262,6 @@
         <li></li>
            
     </ul>
-
 </div>
 <script src="../../static/js/axios.js"></script>
 <script src="../../static/js/vue.js"></script>
@@ -142,7 +270,7 @@
         delimiters: ['{[', ']}'],
         el: '#app',
         data: {
-            level: 0,
+            level: null,
             pwd: '',
             pwd1: '',
             pwd2: '',
@@ -150,11 +278,28 @@
             result: '',
             suggest: [],
             drops: [],
-            drop: {},
+            changeclasses: [],
+            expression_list: [],
+            in_drop: {},
             index: null,
             max_index: null,
+            sele: '',
+            credit: '',
+            classes: [],
+            class_student: []
         },
         methods: {
+            change_classes: function () {
+                this.level = 2;
+                axios.post('http://127.0.0.1:8000/v1.0/data/change_class')
+                    .then((res) => {
+                        this.changeclasses = res.data.change_classes;
+                        this.max_index = this.changeclasses.length - 1;
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+            },
             dropout: function () {
                 this.level = 3;
                 axios.post('http://127.0.0.1:8000/v1.0/data/dropout')
@@ -171,8 +316,6 @@
                 axios.post('http://127.0.0.1:8000/v1.0/data/feedback')
                     .then((res) => {
                         this.suggest = res.data.feedbacks;
-                        console.log(this.suggest);
-                        console.log(res.data.feedbacks);
                     })
                     .catch(function (error) {
                         console.log(error);
@@ -201,28 +344,114 @@
             details: function (index) {
                 this.level = 6;
                 this.index = index;
-                console.log(index);
-                this.drop = this.drops[index];
+                this.in_drop = this.drops[index];
+            },
+            details_one: function (index) {
+                this.level = 7;
+                this.index = index;
+                this.in_drop = this.changeclasses[index];
+            },
+            details_two: function (index) {
+                this.level = 8;
+                this.index = index;
+                this.in_drop = this.expression_list[index];
             },
             res_drop: function () {
+                console.log(this.select);
                 axios.post('http://127.0.0.1:8000/v1.0/manage/dropout', {
                     'result': this.result,
-                    'id': this.drop.id
+                    'select': this.sele,
+                    'id': this.in_drop.id
                 })
                     .then((res) => {
-                        console.log(res)
+                        console.log(res);
+                        this.result = '';
+                        this.sele = '';
                     })
                     .catch(function (error) {
                         console.log(error);
                     })
             },
-            up:function () {
-                this.index --;
-                this.drop = this.drops[this.index]
+            up: function () {
+                if (this.index === 0) {
+                    this.in_drop = this.drops[this.index]
+                } else {
+                    this.index--;
+                    this.in_drop = this.drops[this.index]
+                }
+
             },
-            down:function () {
-                this.index ++;
-                this.drop = this.drops[this.index]
+            down: function () {
+                this.index++;
+                this.in_drop = this.drops[this.index]
+            },
+            change_class: function () {
+                axios.post('http://127.0.0.1:8000/v1.0/manage/change_class', {
+                    'result': this.result,
+                    'select': this.sele,
+                    'id': this.in_drop.id
+                })
+                    .then((res) => {
+                        console.log(res);
+                        this.result = '';
+                        this.sele = '';
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    })
+            },
+            expression: function () {
+                this.level = 1;
+                axios.post('http://127.0.0.1:8000/v1.0/data/expression')
+                    .then((res) => {
+                        this.expression_list = res.data.expressions;
+                        this.max_index = this.expression_list.length - 1;
+                        console.log(this.expression_list)
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+            },
+            change_expression: function () {
+                axios.post('http://127.0.0.1:8000/v1.0/manage/expression', {
+                    'result': this.result,
+                    'credit': this.credit,
+                    'id': this.in_drop.id
+                })
+                    .then((res) => {
+                        console.log(res);
+                        this.mess = res.data
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    })
+            },
+            see_class: function () {
+                this.level = 0;
+                axios.post('http://127.0.0.1:8000/v1.0/data/class')
+                    .then((response) => {
+                        this.classes = response.data.classes;
+                        console.log(response.data.classes);
+                        console.log(this.classes)
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+            },
+            details_class: function (index) {
+                this.level = 9;
+                axios.post('http://127.0.0.1:8000/v1.0/data/class_student', {
+                    class_name: this.classes[index].class_name
+                })
+                    .then((response) => {
+                        this.class_student = response.data.class_students;
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+            },
+            backtrack: function () {
+                this.level = 0
             },
         }
     })

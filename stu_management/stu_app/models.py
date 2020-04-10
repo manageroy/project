@@ -15,13 +15,13 @@ class Administrator(models.Model):
 class Student(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=15)  # 姓名
-    sex = models.CharField(max_length=1)  # 年龄
+    sex = models.CharField(max_length=1)  # 性别
     stu_num = models.CharField(max_length=13, unique=True)  # 学号
     password = models.CharField(max_length=15, default='123456')  # 密码
     credit = models.IntegerField(default=100)  # 学分
     permission = models.IntegerField(default=4)  # 权限
-    class_name = models.ForeignKey('Class', to_field='class_name', related_name='students',
-                                   on_delete=models.CASCADE)
+    class_name = models.ForeignKey('Class', to_field='class_name', related_name='students', blank=True, null=True,
+                                   on_delete=models.SET_NULL)
 
 
 # 班级表
@@ -60,7 +60,6 @@ class Change_class(models.Model):
     id = models.AutoField(primary_key=True)
     class_name = models.CharField(max_length=6)
     before_class = models.CharField(max_length=6)
-    teacher_evaluate = models.TextField(default=' ')
     change_class_reason = models.TextField(default='考试不合格')
     res = models.TextField()
     status = models.CharField(default='0', max_length=2)
@@ -94,7 +93,7 @@ class Points(models.Model):
 class Suggestions(models.Model):
     id = models.AutoField(primary_key=True)
     suggestion = models.TextField()
-    time = models.DateTimeField(auto_now=True)
+    time = models.DateTimeField(auto_now_add=True)
     status = models.CharField(default='0', max_length=2)
 
 
@@ -106,3 +105,15 @@ class Leave_school(models.Model):
     status = models.CharField(default='0', max_length=2)
     stu_num = models.OneToOneField(to_field='stu_num', to='Student', related_name='dropout',
                                    on_delete=models.CASCADE)
+
+
+class Dropout(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=15)  # 姓名
+    sex = models.CharField(max_length=15)  # 性别
+    profession = models.CharField(max_length=15)  # 专业
+    class_name = models.CharField(max_length=15)  # 班级
+    stu_num = models.CharField(max_length=15)  # 学号
+    time_of_enrollment = models.CharField(max_length=15)  # 入学时间
+    reason = models.CharField(max_length=15)  # 退学原因
+    dropout = models.DateTimeField(auto_now_add=True)  # 退学时间

@@ -3,6 +3,7 @@ from stu_app.views import data
 
 urlpatterns = [
     path('class', data.classes),
+    path('class_student', data.class_student),
     path('grade', data.grade),
     path('info', data.info),
     path('expression', data.total_expression),

@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
 }
@@ -19,50 +18,27 @@ body {
     background: linear-gradient(to bottom right, skyblue, #656565);
     background: -webkit-linear-gradient(to bottom right, #50a3a2, #53e3a6);
 }
-
+.container{
+    margin-top: 82px;
+}
 .container h1 {
     text-align: center;
     color: #FFFFFF;
     font-weight: 500;
 }
 
-.container {
-    margin-top: 82px;
-}
-
-.td_a {
-    color: black;
-}
-
-.td_a:hover {
-    color: #d16b6e;
-    text-decoration: none;
-    cursor: pointer;
-}
-
 .container input {
     width: 320px;
     display: block;
+    height: 36px;
     border: 0;
     outline: 0;
     padding: 6px 10px;
     line-height: 24px;
-    margin: 15px auto;
+    margin: 14px auto;
     -webkit-transition: all 0s ease-in 0.1ms;
     -moz-transition: all 0s ease-in 0.1ms;
     transition: all 0s ease-in 0.1ms;
-}
-
-.inp .radio_l {
-    height: 20px;
-    display: inline;
-    width: 30px;
-}
-.inp .radio_r {
-    height: 20px;
-    display: inline;
-    width: 30px;
-    margin-left: 140px;
 }
 
 .container input[type="text"], .container input[type="password"] {
@@ -70,6 +46,7 @@ body {
     font-size: 16px;
     color: #50a3a2;
 }
+
 
 .wrap ul {
     position: absolute;
@@ -101,7 +78,6 @@ body {
     -o-animation-duration: 10s;
     -webkit-animation-duration: 10s;
 }
-
 
 .wrap ul li:nth-child(2) {
     width: 40px;
@@ -246,8 +222,8 @@ body {
 h1 {
     color: #ffffff;
     padding-top: 15px;
-    font-size: 30px;
     text-align: center;
+    font-size: 30px;
 }
 
 h3 {
@@ -328,7 +304,6 @@ button {
     position: fixed;
     top: 38px;
     right: 103px;
-
 }
 
 .a_a img {
@@ -365,7 +340,26 @@ button {
 }
 
 .table_in {
-    font-size: 18px;
+    font-size: 22px;
+}
+
+.td_a {
+    color: black;
+}
+.td_p {
+    color: white;
+    margin-left: 219px;
+}
+
+.td_a:hover {
+    color: #d16b6e;
+    text-decoration: none;
+    cursor: pointer;
+}
+.td_p:hover {
+    color: #d16b6e;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .h2_class {
@@ -385,22 +379,4 @@ button {
     top: 29px;
     right: 261px;
     color: white;
-}
-
-.p_in1 {
-    margin-top: 30px;
-    margin-left: 423px;
-}
-
-.p_in2 {
-    margin-top: 59px;
-    margin-left: 10px;
-}
-
-.up {
-    margin: 13px 234px;
-}
-
-.down {
-    float: right;
 }

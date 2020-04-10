@@ -4,37 +4,51 @@ from stu_app import models
 
 
 def expression(request):
-    ex = models.School_expression.objects.get(status=0)
-    if request.method == 'GET':
-        return render(request, 'manage/manage_expression.html', context={'res': ex})
-    result = request.POST.get('result')
-    credit = request.POST.get('credit')
-    ex.punish = result
-    ex.result = credit
-    ex.stu_num.credit = eval(f'{ex.stu_num.credit} + {credit}')
-    ex.stu_num.save()
-    # ex.save()
-    ex.status = 1
-    ex.save()
-    return HttpResponse('afeiowj')
+    res = json.loads(request.body)
+    result = res['result']
+    credit = res['credit']
+    ex = models.School_expression.objects.filter(id=res['id']).first()
+    if ex:
+        ex.punish = result
+        ex.result = credit
+        ex.stu_num.credit = eval(f'{ex.stu_num.credit} + {credit}')
+        ex.stu_num.save()
+        ex.status = 1
+        ex.save()
+        return HttpResponse('ok')
+    return HttpResponse('失败')
 
 
 def change_class(request):
-    if request.method == 'GET':
-        res = models.Change_class.objects.filter(status=0)[0]
-        return render(request, 'manage/manage_change_class.html', context={'res': res})
-    suggestion = request.POST.get('suggestion')
-    res = models.Change_class.objects.filter(status=0)[0]
-    res.status = 1
-    res.res = suggestion
-    res.save()
-    return HttpResponse('ll')
+    res = json.loads(request.body)
+    change = models.Change_class.objects.filter(id=res['id']).first()
+    if res['select'] == 'male':
+        class_name = models.Class.objects.filter(class_name=change.class_name).first()
+        change.stu_num.class_name = class_name
+        change.stu_num.save()
+    change.status = 1
+    change.res = res['result']
+    change.save()
+    return HttpResponse('ok')
 
 
 def dropout(request):
     res = json.loads(request.body)
     drop = models.Leave_school.objects.filter(id=res['id']).first()
-    drop.res = res['result']
-    drop.status = 1
-    drop.save()
-    return HttpResponse('ok')
+    if res['select'] == 'male':
+        stu_num = drop.stu_num
+        models.Dropout(name=stu_num.name, sex=stu_num.sex,
+                       profession=stu_num.class_name.profession,
+                       class_name=stu_num.class_name.class_name,
+                       stu_num=stu_num.stu_num,
+                       time_of_enrollment=stu_num.stu_info.time_of_enrollment,
+                       reason=drop.reason
+                       ).save()
+        stu_num.delete()
+        stu_num.save()
+        return HttpResponse('ok')
+    else:
+        drop.res = res['result']
+        drop.status = 1
+        drop.save()
+        return HttpResponse('ok')

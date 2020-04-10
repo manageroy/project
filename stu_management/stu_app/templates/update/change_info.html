@@ -240,20 +240,20 @@
     <div class="container">
         <form method="post" action="/v1.0/change/info">
             <h1 style="color:white; margin: 0; text-align: center">Update message</h1>
-            <label><input type="text" value="{{ stu.id_num }}" name="id_num" required autocomplete="off"/></label>
-            <label><input type="text" value="{{ stu.age }}" name="age" required autocomplete="off"/></label>
-            <label><input type="text" value="{{ stu.address }}" name="address" required
-                          autocomplete="off"/></label>
-            <label><input type="text" value="{{ stu.phone }}" required name="phone" autocomplete="off"/></label>
-            <label><input type="text" value="{{ stu.parent }}" required name="parent" autocomplete="off"/></label>
-            <label><input type="text" value="{{ stu.parent_phone }}" required name="parent_phone"
-                          autocomplete="off"/></label>
-            <label><input type="text" value="{{ stu.tuition }}" name="money" required autocomplete="off"/></label>
-            <label><input type="text" value="{{ stu.loans }}" name="loans" required autocomplete="off"/></label>
-            <label><input type="text" value="{{ stu.recruiter }}" required name="recruiter"
-                          autocomplete="off"/></label>
-            <label><input type="text" value="{{ stu.time_of_enrollment }}" name="time_of_enrollment" required
-                          autocomplete="off"/></label>
+            <label>身份证号:<input type="text" value="{{ stu.id_num }}" name="id_num" required autocomplete="off"/></label>
+            <label>年龄:<input type="text" value="{{ stu.age }}" name="age" required autocomplete="off"/></label>
+            <label>籍贯:<input type="text" value="{{ stu.address }}" name="address" required
+                             autocomplete="off"/></label>
+            <label>联系方式:<input type="text" value="{{ stu.phone }}" required name="phone" autocomplete="off"/></label>
+            <label>家长:<input type="text" value="{{ stu.parent }}" required name="parent" autocomplete="off"/></label>
+            <label>家长联系方式:<input type="text" value="{{ stu.parent_phone }}" required name="parent_phone"
+                                 autocomplete="off"/></label>
+            <label>学费:<input type="text" value="{{ stu.tuition }}" name="money" required autocomplete="off"/></label>
+            <label>贷款:<input type="text" value="{{ stu.loans }}" name="loans" required autocomplete="off"/></label>
+            <label>招生老师:<input type="text" value="{{ stu.recruiter }}" required name="recruiter"
+                               autocomplete="off"/></label>
+            <label>入学时间:<input type="text" value="{{ stu.time_of_enrollment }}" name="time_of_enrollment" required
+                               autocomplete="off"/></label>
             <label><input type="submit" value="提交"/></label>
         </form>
     </div>

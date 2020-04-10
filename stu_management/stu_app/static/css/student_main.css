@@ -25,6 +25,14 @@ body {
     font-weight: 500;
 }
 
+.container {
+    margin-top: 82px;
+}
+
+.containers {
+    margin-top: 82px;
+}
+
 .container input {
     width: 320px;
     display: block;

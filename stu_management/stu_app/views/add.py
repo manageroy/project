@@ -3,32 +3,22 @@ from stu_app import models
 import json
 
 
-def res(request, parameter: list):
-    r = {}
-    for i in parameter:
-        r[i] = (request.POST.get(i))
-    return r
-
-
 def student(request):
-    if request.method == 'GET':
-        return render(request, 'add/add_student.html')
-    name = request.POST.get('name')
-    sex = request.POST.get('sex')
-    class_name = request.POST.get('class')
-    major = request.POST.get('major')
-    stu_num = request.POST.get('stu_num')
-    teacher = request.POST.get('teacher')
-    teach = request.POST.get('teach')
-    models.Student(name=name, sex=sex, class_name=class_name, profession=major, stu_num='s' + stu_num,
-                   teacher_name=teacher, teach_name=teach).save()
-    return render(request, 'add/add_student.html')
+    res = json.loads(request.body)
+    name = res['name']
+    sex = res['sex']
+    class_name = res['class']
+    stu_num = res['stu_num']
+    cl = models.Class.objects.filter(class_name=class_name).first()
+    if cl:
+        models.Student(name=name, sex=sex, class_name=cl, stu_num='s' + stu_num,).save()
+        return HttpResponse(f'学生{name}添加成功')
+    return HttpResponse(f'学生{name}添加失败')
 
 
 def info(request):
     if request.method == 'GET':
         return render(request, 'add/add_info.html')
-
     stu_num = request.POST.get('stu_num')
     stu = models.Student.objects.get(stu_num=stu_num)
     if stu:
@@ -49,17 +39,17 @@ def info(request):
 
 
 def grade(request):
-    if request.method == 'GET':
-        return render(request, 'add/add_grade.html')
-    stu_num = request.POST.get('stu_num')
-    stu = models.Student.objects.get(stu_num=stu_num)
+    res = json.loads(request.body)
+    stu_num = res['stu_num']
+    stu = models.Student.objects.filter(stu_num=stu_num).first()
     if stu:
-        time = request.POST.get("time")
-        pen = int(request.POST.get("pen"))
-        competer = int(request.POST.get("competer"))
+        time = res["time"]
+        pen = int(res["pen"])
+        competer = int(res["competer"])
         models.Points(stu_num=stu, exam_time=time, write_points=pen, competer_points=competer,
                       total_points=pen + competer).save()
-    return render(request, 'add/add_grade.html')
+        return HttpResponse(f'学生{stu.name}考试成绩添加成功')
+    return HttpResponse(f'没有此学生')
 
 
 def feedback(request):
@@ -69,38 +59,29 @@ def feedback(request):
 
 
 def expression(request):
-    if request.method == 'GET':
-        return render(request, 'add/add_expression.html')
-    stu_num = request.POST.get('stu_num')
-    stu = models.Student.objects.get(stu_num=stu_num)
+    res = json.loads(request.body)
+    stu = models.Student.objects.filter(stu_num=res['stu_num'], name=res['name']).first()
     if stu:
-        reason = request.POST.get("reason")
-        models.School_expression(reason=reason, stu_num=stu).save()
-    return HttpResponse('ok')
+        models.School_expression(stu_num=stu, reason=res['reason']).save()
+        return HttpResponse('提交成功')
+    return HttpResponse('没有此学生')
 
 
 def change_class(request):
-    if request.method == 'GET':
-        return render(request, 'add/add_change_class.html')
-    stu_num = request.POST.get('stu_num')
-    stu = models.Student.objects.get(stu_num=stu_num)
+    res = json.loads(request.body)
+    stu = models.Student.objects.filter(stu_num=res['stu_num'], name=res['name']).first()
     if stu:
-        name = request.POST.get("name")
-        class_name = request.POST.get("class")
-        befor_class = request.POST.get("befor_class")
-        teacher_evaluate = request.POST.get("teacher_evaluate")
-        num = request.POST.get("num")
-        models.Change_class(stu_num=stu, class_name=class_name, before_class=befor_class,
-                            teacher_evaluate=teacher_evaluate, change_class_num=num).save()
-    return HttpResponse('ok')
+        class_name = res["hope_class"]
+        befor_class = res["befor_class"]
+        models.Change_class(stu_num=stu, class_name=class_name, before_class=befor_class).save()
+        return HttpResponse(f'学生{stu.name}转班申请以发送')
+    return HttpResponse(f'没有此学生')
 
 
 def dropout(request):
-    if request.method == 'GET':
-        return render(request, 'add/add_dropout.html')
-    stu_num = request.POST.get('stu_num')
-    stu = models.Student.objects.get(stu_num=stu_num)
+    res = json.loads(request.body)
+    stu = models.Student.objects.filter(stu_num=res['stu_num'], name=res['name']).first()
     if stu:
-        reason = request.POST.get("reason")
-        models.Leave_school(stu_num=stu, reason=reason).save()
-    return HttpResponse('ok')
+        models.Leave_school(stu_num=stu, reason=res['reason']).save()
+        return HttpResponse('提交成功')
+    return HttpResponse('没有此学生')
