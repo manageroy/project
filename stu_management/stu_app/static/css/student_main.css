@@ -25,14 +25,6 @@ body {
     font-weight: 500;
 }
 
-.container {
-    margin-top: 82px;
-}
-
-.containers {
-    margin-top: 82px;
-}
-
 .container input {
     width: 320px;
     display: block;
@@ -399,6 +391,31 @@ button {
 }
 
 .info_div {
-    color: red;
-    margin-left: 500px;
+    color: black;
+    margin-left: 400px;
+    margin-top: 43px;
+    font-size: 26px;
 }
+p{
+    padding-bottom: 32px;
+}
+.a_a img{
+            display: none;
+            position: fixed;
+            top: 77px;
+            right: 87px;
+            border: 1px solid black;
+            width: 117px;
+            height: 124px;
+        }
+.a_a:hover img{
+            display: block;
+        }
+.logout a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+.logout a:hover{
+            color: #d16b6e;
+             cursor:pointer;        }
