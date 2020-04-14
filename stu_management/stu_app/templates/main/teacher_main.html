@@ -12,64 +12,45 @@
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" href="../../static/css/teacher_main.css">
     <style>
-    .hiea1{
-    display: none;
-    }
-    .hiea2{
-    display: none;
-    }
+        .hiea1 {
+            display: none;
+        }
+
+        .hiea2 {
+            display: none;
+        }
     </style>
 </head>
 <body>
-<div class="wrap" style="overflow-y:scroll;">
+<div class="wrap" id="app" style="overflow-y:scroll;">
     <div class="left_div">
         <h1>学生管理</h1>
     </div>
-    <div class="search bar"  id="divapp">
-            <input placeholder="搜索" name="search_msg" v-model="search_msg" autocomplete="off">
-            <button @click="seacher_main"></button>
-        <div class="c_series">
-        <div id="c1" v-bind:class="getclass1()">
-                    <table class="table table-striped tab">
-                        <tr>
-                            <th>班级</th>
-                            <th>专业</th>
-                            <th>班主任</th>
-                            <th>讲师</th>
-                            <th>人数</th>
-                        </tr>
-                        <tr v-for="cont in messagesaa">
-                            <td>{[ cont.classname ]}</td>
-                            <td>{[cont.professiona ]}</td>
-                            <td>{[cont.teach_name ]}</td>
-                            <td>{[cont.teacher_name ]}</td>
-                            <td>{[cont.count_num ]}</td>
-                        </tr>
-                    </table>
-                </div>
-        </div>
-        <div id="c2" v-bind:class="getclass2()">
+    <div class="search bar">
+        <input placeholder="搜索" name="search_msg" v-model="search_msg" autocomplete="off">
+        <button @click="seacher_main"></button>
+        <div v-show="level==8">
             <table class="table table-striped tab">
-                        <tr>
-                            <th>姓名</th>
-                            <th>学号</th>
-                            <th>学分</th>
-                            <th>班级</th>
-                            <th>专业</th>
-                            <th>班主任</th>
-                            <th>讲师</th>
-                        </tr>
-                        <tr v-for="cont in messagesaa">
-                            <td>{[cont.nickname ]}</td>
-                            <td>{[cont.stu_numa ]}</td>
-                            <td>{[cont.credita ]}</td>
-                            <td>{[cont.professiona ]}</td>
-                            <td>{[cont.count_num ]}</td>
-                            <td>{[cont.teacher_name ]}</td>
-                            <td>{[cont.teach_name ]}</td>
-                        </tr>
-                    </table>
-                </div>
+                <tr>
+                    <th>姓名</th>
+                    <th>学号</th>
+                    <th>学分</th>
+                    <th>班级</th>
+                    <th>专业</th>
+                    <th>班主任</th>
+                    <th>讲师</th>
+                </tr>
+                <tr v-for="cont in messagesaa">
+                    <td>{[cont.nickname ]}</td>
+                    <td>{[cont.stu_numa ]}</td>
+                    <td>{[cont.credita ]}</td>
+                    <td>{[cont.professiona ]}</td>
+                    <td>{[cont.count_num ]}</td>
+                    <td>{[cont.teacher_name ]}</td>
+                    <td>{[cont.teach_name ]}</td>
+                </tr>
+            </table>
+        </div>
     </div>
     <div class="logout">
         <h4 class="h4_name">欢迎,{{ name }}老师</h4>
@@ -78,17 +59,17 @@
             <img src="../../static/images/erwei.png">
         </a>
     </div>
-    <div id="app">
+    <div>
         <div class="left_div2">
             <h3><a class="a_name" @click="see_class" href="#">查看班级</a></h3>
-            <h3><a class="a_name" @click="add_stu" href="#" >添加学生</a></h3>
+            <h3><a class="a_name" @click="add_stu" href="#">添加学生</a></h3>
             <h3><a class="a_name" @click="update_info" href="#">更改学生信息</a></h3>
             <h3><a class="a_name" @click="expression" href="#">学生表现</a></h3>
             <h3><a class="a_name" @click="change_class" href="#">学生转班申请</a></h3>
             <h3><a class="a_name" @click="dropout" href="#">退学申请</a></h3>
             <h3><a class="a_name" @click="password" href="#">设置密码</a></h3>
         </div>
-        <div id="none1">
+        <div>
             <div v-show="level==0">
                 <h2 class="h2_class">添加学生</h2>
                 <div class="container">
@@ -215,12 +196,17 @@
                 <h2 class="h2_class">班级</h2>
                 <div class="container">
                     <form method="post">
-                        <label><input type="text" v-model="name" name="name" placeholder="姓名" autocomplete="off" required/></label>
-                        <label><input type="text" v-model="stu_num" name="stu_num" placeholder="学号" autocomplete="off" required/></label>
-                        <label><input type="text" v-model="hope_class" name="class" placeholder="班级" autocomplete="off" required/></label>
-                        <label><input type="text" v-model="befor_class" name="befor_class" placeholder="之前班级" autocomplete="off"
-                            required/></label>
-                        <label><input type="text" v-model="reason" name="reason" placeholder="转班原因" autocomplete="off" required/></label>
+                        <label><input type="text" v-model="name" name="name" placeholder="姓名" autocomplete="off"
+                                      required/></label>
+                        <label><input type="text" v-model="stu_num" name="stu_num" placeholder="学号" autocomplete="off"
+                                      required/></label>
+                        <label><input type="text" v-model="hope_class" name="class" placeholder="班级" autocomplete="off"
+                                      required/></label>
+                        <label><input type="text" v-model="befor_class" name="befor_class" placeholder="之前班级"
+                                      autocomplete="off"
+                                      required/></label>
+                        <label><input type="text" v-model="reason" name="reason" placeholder="转班原因" autocomplete="off"
+                                      required/></label>
                         <p v-if="mess">{[ mess ]}</p>
                         <label><input type="button" @click="add_change" value="提交"/></label>
                     </form>
@@ -273,10 +259,11 @@
             class_student: [],
             hope_class: '',
             befor_class: '',
+            search_msg: "",
+            messagesaa: [],
         },
         methods: {
             add_stu: function () {
-                ding();ding3();
                 this.mess = '';
                 this.level = 0
             },
@@ -297,7 +284,6 @@
                 });
             },
             update_info: function () {
-                ding();ding3();
                 this.mess = '';
                 this.level = 1
             },
@@ -305,7 +291,6 @@
                 return '/v1.0/change/info?name=' + this.name + '&stu_num=' + this.stu_num
             },
             expression: function () {
-                ding();ding3();
                 this.mess = '';
                 this.level = 2
             },
@@ -324,7 +309,6 @@
                 });
             },
             dropout: function () {
-                ding();ding3();
                 this.mess = '';
                 this.level = 3
             },
@@ -343,7 +327,6 @@
                 });
             },
             password: function () {
-                ding();ding3();
                 this.mess = '';
                 this.level = 4
             },
@@ -366,7 +349,6 @@
             },
 
             see_class: function () {
-                ding();ding3();
                 this.level = 5;
                 axios.post('http://127.0.0.1:8000/v1.0/data/class')
                     .then((response) => {
@@ -395,11 +377,10 @@
                 this.level = 5
             },
             change_class: function () {
-                ding();ding3();
                 this.mess = '';
                 this.level = 7
             },
-            add_change:function () {
+            add_change: function () {
                 axios.post('http://127.0.0.1:8000/v1.0/add/change_class', {
                     name: this.name,
                     stu_num: this.stu_num,
@@ -419,62 +400,22 @@
                         console.log(error);
                     });
             },
+            seacher_main: function () {
+                this.level = 8;
+                axios.post('http://127.0.0.1:8000/v1.0/search_msg', {
+                    'msg': this.search_msg
+                })
+                    .then((res) => {
+                        this.messagesaa = res.data.msgss;
+                        console.log(this.messagesaa);
+                        this.search_msg = '';
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    })
+            }
         }
     });
-        function ding() {
-        document.getElementById('c1').classList.add('hiea1');
-        document.getElementById('c2').classList.add('hiea2');
-    }
-    let divapp =new Vue({
-        delimiters: ['{[', ']}'],
-        el:'#divapp',
-        data:{
-            search_msg:"",
-            messagesaa:[],
-            aca1:true,
-            isactive:true,
-            aca2:true
-        },
-            methods: {
-                getclass1:function () {
-                    return {table_in:this.isactive,hiea1:this.aca1}
-                },
-                getclass2:function () {
-                    return {table_in:this.isactive,hiea2:this.aca2}
-                },
-                seacher_main: function () {
-                    axios.post('http://127.0.0.1:8000/v1.0/search_msg',{
-                        'msg':this.search_msg
-                    })
-                        .then((res) =>{
-                            ding2();
-                            this.messagesaa=res.data.msgss;
-                            console.log(this.messagesaa);
-                            if (this.messagesaa[0].permisssions == 'c1'){
-                                this.aca1 =false;
-                                this.aca2 = true;
-                                this.search_msg=''
 
-                            }else if(this.messagesaa[0].permisssions == 'c2'){
-                                this.aca2 = false;
-                                this.aca1 = true;
-                                this.search_msg=''
-                            }else{
-                                console.log('空');
-                            }
-                            })
-                        .catch(function (error) {
-                            console.log(error);
-                        })
-                }
-
-            }
-    });
-    function ding2() {
-        document.getElementById('none1').classList.add('hiea1');
-    }
-    function ding3() {
-        document.getElementById('none1').classList.remove('hiea1');
-    }
 </script>
 </body>

@@ -84,7 +84,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'stu_management',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': '248548',
         'HOST': '127.0.0.1',
         'PORT': '3306',
     }
@@ -125,4 +125,3 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-LIST_NUM=['1', '2', '3', '4', '5', '6', '7', '8', '9']
