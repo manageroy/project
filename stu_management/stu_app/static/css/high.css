@@ -3,6 +3,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     margin: 0;
     padding: 0;
@@ -270,7 +271,7 @@ div.search {
     position: fixed;
     top: 103px;
     left: -35px;
-    padding: 14px 53px;
+    padding: 0px 53px;
     width: 400px;
     margin-top: -90px;
     margin-left: 201px;
@@ -404,3 +405,13 @@ button {
 .down {
     float: right;
 }
+.c_series{
+    background: transparent;
+    width: 1105px;
+    height: 692px;
+    margin-top: 50px;
+    margin-left: -7px;
+    z-index: 1000;
+}
+
+

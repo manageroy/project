@@ -302,7 +302,7 @@ button {
     background: #c5464a;
     border-radius: 0 5px 5px 0;
     width: 60px;
-    top: 0;
+    top: 14px;
     right: 0;
 }
 
@@ -382,4 +382,12 @@ button {
     top: 29px;
     right: 261px;
     color: white;
+}
+.c_series{
+    background: transparent;
+    width: 1105px;
+    height: 692px;
+    margin-top: 50px;
+    margin-left: -7px;
+    z-index: 1000;
 }
