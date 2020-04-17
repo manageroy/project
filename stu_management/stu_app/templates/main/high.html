@@ -25,7 +25,7 @@
     <div class="search bar">
         <input placeholder="搜索" name="search_msg" v-model="search_msg" autocomplete="off">
         <button @click="seacher_main"></button>
-        <div>
+        <div v-show="level==10">
             <table class="table table-striped tab">
                 <tr>
                     <th>姓名</th>
